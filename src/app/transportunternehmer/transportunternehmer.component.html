@@ -1,0 +1,30 @@
+<div class="container column column--centered">
+    <div class="card">
+        <div class="card__svg card__svg--hexgonal">
+            <img [src]="urlPrefix + 'assets/icons/lorry.svg'"/>
+        </div>
+        <h3 class="card__title" translate="transportCompany.capacityExploitation.title"></h3>
+        <div class="card__info" translate="transportCompany.capacityExploitation.info"></div>
+    </div>
+
+    <div class="card">
+        <div class="card__svg card__svg--hexgonal">
+            <img [src]="urlPrefix + 'assets/icons/handshake.svg'"/>
+        </div>
+        <h3 class="card__title" translate="transportCompany.cooperation.title"></h3>
+        <div class="card__info" translate="transportCompany.cooperation.info"></div>
+    </div>
+
+    <div class="card">
+        <div class="card__svg card__svg--hexgonal">
+            <img [src]="urlPrefix + 'assets/icons/check-mail.svg'"/>
+        </div>
+        <h3 class="card__title" translate="transportCompany.interest.title"></h3>
+        <div class="card__info" translate="transportCompany.interest.info"></div>
+    </div>
+
+    <div>
+        <!-- <a [href]="baseUrl + 'standorte#locationMap'" class="btn btn--arrowed" translate="transportCompany.toOurLocations" (click)="goTo()"></a> -->
+        <a class="btn btn--arrowed" translate="transportCompany.toOurLocations" (click)="goTo()"></a>
+    </div>
+</div>

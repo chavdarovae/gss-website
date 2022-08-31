@@ -1,0 +1,105 @@
+@import "../../assets/styles/app-variables";
+@import "../../assets/styles/settings/settings-breakpoints";
+
+.locations__info {
+    margin-bottom: 50px;
+}
+.locations__map {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    // touch-action: pan-y;
+    
+    &.active {
+        // z-index: 4;
+        // border: 1px solid red;
+    }
+
+    .map {
+        // touch-action: pinch-zoom;
+    }
+
+
+    @include for-tablet-portrait-up {
+        height: 500px;
+    }
+
+    @include for-tablet-landscape-up {
+        height: 600px;
+    }
+
+    @include for-desktop-up {
+        height: 750px;
+    }
+
+    .map {
+        width: 320%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-36%, -62%);
+
+        @include for-tablet-portrait-up {
+            width: 200%;
+            transform: translate(-40%, -63%);
+        }
+
+        @include for-tablet-landscape-up {
+            width: 175%;
+            transform: translate(-37%, -63%);
+        }
+
+        @include for-desktop-up {
+            width: 150%;
+            transform: translate(-43%, -62%);
+        }
+
+        @include for-big-desktop-up {
+            width: 120%;
+            transform: translate(-43%, -62%);
+        }
+    }
+} 
+
+.container {
+    padding: 20px 0 0 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: $primary;
+    box-shadow: $primary-shadow;
+    margin-right: 10px;
+    border: 1px solid #FFFFFF;
+    position: relative;
+
+    @include for-tablet-portrait-up {
+        width: 13px;
+        height: 13px;
+    }
+
+    @include for-tablet-landscape-up {
+        width: 16px;
+        height: 16px;
+    }
+
+    @include for-desktop-up {
+        width: 22px;
+        height: 22px;
+        border: 2px solid #FFFFFF;
+    }
+
+    @include for-big-desktop-up {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.imp-wrap.imp-sticky-tooltips {
+    max-width: 2560px !important;
+    max-height: unset !important;
+    width: 100% !important;
+}

@@ -1,0 +1,27 @@
+@import "../assets/styles/app-variables";
+@import "../assets/styles/settings/settings-breakpoints";
+
+.app {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    row-gap: 30px;
+
+    @include for-tablet-portrait-up {
+        // grid-template-rows: calc($poster-height-tablet-portrait + $header-height-tablet-portrait) 1fr 130px;
+    }
+
+    @include for-tablet-landscape-up {
+        // grid-template-rows: calc($poster-height-tablet-landscape + $header-height-tablet-landscape) 1fr 130px;
+    }
+
+    @include for-desktop-up {
+        // grid-template-rows: calc($poster-height-desktop + $header-height-desktop) 1fr 130px;
+        row-gap: 50px;
+    }
+
+    &--standorte {
+        row-gap: 0px;
+
+    }
+}

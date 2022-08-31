@@ -1,0 +1,124 @@
+@import "../../assets/styles/app-variables";
+@import "../../assets/styles/settings/settings-breakpoints";
+
+:host {
+	.card-holder {
+		display: grid;
+		grid-template-columns: 1fr;
+		column-gap: 30px;
+		row-gap: 30px;
+		justify-items: center;
+
+		@include for-tablet-portrait-up {
+			grid-template-columns: 1fr 1fr;
+			// justify-items: stretch;
+		}
+
+		@include for-tablet-landscape-up {
+			grid-template-columns: 1fr 1fr 1fr;
+			// justify-items: stretch;
+		}
+	}
+
+	.card {
+		min-width: 200px;
+		max-width: 600px;
+		padding: 20px;
+		display: grid;
+		grid-template-rows: 100px min 1fr;
+		row-gap: 10px;
+		align-items: start;
+		box-shadow: $primary-shadow;
+
+		& > * {
+			word-break: break-word;
+			/* Adds a hyphen where the word breaks, if supported (No Blink) */
+			-ms-hyphens: auto;
+			-moz-hyphens: auto;
+			-webkit-hyphens: auto;
+			hyphens: auto;
+		}
+
+		@include for-tablet-landscape-up {
+			min-width: 300px;
+			max-width: unset;
+		}
+
+		&--green {
+			background-color: $primary;
+
+			& > * {
+				color: $text-color-secondary;
+			}
+		}
+
+		&--gray {
+			background-color: $card-bg;
+
+			img {
+				filter: invert(17%) sepia(96%) saturate(2850%) hue-rotate(147deg) brightness(90%) contrast(101%);
+			}
+		}
+
+		&--big {
+			@include for-tablet-landscape-up {
+				grid-column: 1 / span 2;
+			}
+		}
+	}
+
+	.history-holder {
+		margin: 70px 0;
+	}
+
+
+	.document-holder {
+		width: 100%;
+        border-top: 3px solid $primary;
+        border-bottom: 3px solid $primary;
+		padding: 20px 10px;
+
+		@include for-tablet-landscape-up {
+			padding: 20px 50px;
+		}
+	}
+
+	.document {
+		max-width: 100%;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 30px 1fr 20px;
+		justify-items: start;
+		align-items: center;
+
+		@include for-tablet-portrait-up {
+			grid-template-columns: 50px 1fr 150px 110px;
+		}
+		&__name {
+			width: 95%;
+			word-break: break-word;
+		}
+
+		&__size {
+			color: $nav-text-color;
+		}
+
+		& + .document {
+			margin-top: 20px;
+		}
+
+		i {
+			color: $primary;
+		}
+
+		a {
+			* {
+				color: $primary;
+			}
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

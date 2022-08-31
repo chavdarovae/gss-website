@@ -1,0 +1,62 @@
+@import "../../assets/styles/app-variables";
+@import "../../assets/styles/settings/settings-breakpoints";
+
+:host {
+    .card-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 40px;
+        row-gap: 40px;
+        justify-items: center;
+
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include for-desktop-up {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .card {
+        min-width: 300px;
+        max-width: 300px;
+        display: grid;
+        grid-template-rows: 180px min 1fr;
+        row-gap: 10px;
+        align-items: start;
+        justify-items: center;
+        box-shadow: $primary-shadow;
+        background-color: $card-bg;
+        color: $text-color-primary;
+
+        &__svg {
+            width: 100%;
+            height: 180px;
+            background-color: $primary;
+
+            img {
+                max-width: 70%;
+                max-height: 70%;
+                height: 70%;
+                overflow: hidden;
+            }
+    
+            img.smaller {
+                max-height: 65%;
+                height: 65%;
+            }
+        }
+
+        h2 {
+            padding: 0 20px;
+            margin-bottom: 0px;
+        }
+
+        &__info{
+            padding: 0 20px 40px 20px;
+        }
+    }
+}
+
+

@@ -1,0 +1,14 @@
+<!-- <div class="app" [ngClass]="{'app--standorte': activeTab === 'standorte'}"> -->
+<div class="app">
+  <app-header [activeTab]="activeTab" [pageTitle]="pageTitle"></app-header>
+
+  <div class="main">
+    <!-- <app-messages></app-messages> -->
+  
+    <!-- <app-loading></app-loading> -->
+  
+    <router-outlet></router-outlet>
+  </div>
+  
+  <app-footer></app-footer>
+</div>

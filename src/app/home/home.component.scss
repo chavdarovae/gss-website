@@ -1,0 +1,60 @@
+@import "../../assets/styles/app-variables";
+@import "../../assets/styles/settings/settings-breakpoints";
+.title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.card-holder {
+	display: flex;
+	flex-flow: column nowrap;
+
+	@include for-tablet-portrait-up {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+}
+
+.card {
+	box-shadow: none;
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-template-areas: "icon title";
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 50px;
+	column-gap: 10px;
+
+	&:nth-child(2n + 1) {
+		grid-template-columns: 1fr min-content;
+		grid-template-areas: "title icon";
+	}
+
+	@include for-tablet-portrait-up {
+		width: 250px;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	@include for-tablet-landscape-up {
+	}
+
+	@include for-desktop-up {
+	}
+
+	&__svg {
+		grid-area: icon;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__title {
+		grid-area: title;
+		text-align: center;
+		margin: 10px 0;
+	}
+}

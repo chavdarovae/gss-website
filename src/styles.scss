@@ -1,0 +1,202 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/app-variables";
+
+@import "./assets/styles/settings/_settings-animations.scss";
+@import "./assets/styles/settings/_settings-place-holders.scss";
+@import "./assets/styles/settings/_settings-breakpoints.scss";
+
+@import "./assets/styles/generic/_generic-normalize.scss";
+@import "./assets/styles/generic/_generic-fonts.scss";
+@import "./assets/styles/generic/_generic-scrollbar.scss";
+@import "./assets/styles/generic/_generic-selection.scss";
+
+@import "./assets/styles/elements/_elements-body.scss";
+@import "./assets/styles/elements/_elements-paragraphs.scss";
+@import "./assets/styles/elements/_elements-headings.scss";
+@import "./assets/styles/elements/_elements-lists.scss";
+@import "./assets/styles/elements/_elements-list-items.scss";
+@import "./assets/styles/elements/_elements-images.scss";
+@import "./assets/styles/elements/_elements-links.scss";
+@import "./assets/styles/elements/_elements-select.scss";
+
+@import "./assets/styles/components/_components-poster.scss";
+@import "./assets/styles/components/_components-logo.scss";
+@import "./assets/styles/components/_components-menu.scss";
+@import "./assets/styles/components/_components-form.scss";
+@import "./assets/styles/components/_components-notifications.scss";
+@import "./assets/styles/components/_components-buttons.scss";
+@import "./assets/styles/components/_components-icons.scss";
+@import "./assets/styles/components/_components-card.scss";
+@import "./assets/styles/components/_components-details.scss";
+
+@import "./assets/styles/objects/_objects-containers.scss";
+@import "./assets/styles/objects/_objects-text-like-list.scss";
+
+@import "./assets/styles/utilities/_utilities-no-marign.scss";
+@import "./assets/styles/utilities/_utilities-bold.scss";
+@import "./assets/styles/utilities/_utilities-hidden.scss";
+@import "./assets/styles/utilities/_utilities-invisible.scss";
+@import "./assets/styles/utilities/_utilities-animations.scss";
+@import "./assets/styles/utilities/_utilities-page-title.scss";
+@import "./assets/styles/utilities/_utilities-margin-bottom.scss";
+@import "./assets/styles/utilities/_utilities-mobile-only.scss";
+@import "./assets/styles/utilities/_utilities-tablet-only.scss";
+@import "./assets/styles/utilities/_utilities-link-with-icon.scss";
+
+// standort dialog styles
+.dialog {
+    width: 85vw !important;
+    max-width: 85vw !important;
+
+    @include for-desktop-up {
+        min-width: 1350px !important;
+    }
+    mat-dialog-container {
+        margin-bottom: 20px;
+        padding: 15px;
+        overflow-y: scroll !important;
+        max-height: calc(var(--vh, 1vh) * 90);
+
+        @include for-tablet-portrait-up {
+            max-height: calc(var(--vh, 1vh) * 95);
+            overflow-y: hidden !important;
+            padding: 20px;
+        }
+
+        @include for-desktop-up {
+            max-height: unset;
+            overflow-y: hidden !important;
+            padding: 25px;
+        }
+
+        mat-tab-body {
+            overflow-y: hidden !important;
+
+            .mat-tab-body-content {
+                overflow-y: hidden !important;
+                overflow-x: hidden !important;
+
+                @include for-tablet-portrait-up {
+                    margin-top: 10px;
+                    overflow-y: scroll !important;
+                    height: 45vh;
+                    min-height: 45vh;
+                }
+
+                @include for-tablet-landscape-up {
+                    height: 40vh;
+                    min-height: 40vh;
+                }
+
+                @include for-desktop-up {
+                    margin-top: 15px;
+                    height: 70vh;
+                    min-height: 70vh;
+                }
+            }
+        }
+    }
+
+    mat-tab-group.tab {
+        .mat-tab-label {
+            width: min-content;
+            opacity: 1;
+            border: 3px solid $text-color-thirdery;
+            margin: 0 5px 0 0;
+            padding: 0 10px;
+            min-width: 120px;
+
+            .mat-tab-label-content {
+                background-color: $body-bg;
+                color: $text-color-thirdery;
+                font-family: "Roboto";
+                font-size: 1 * $font-size-base;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .mat-tab-label.mat-tab-label-active {
+            background-color: $primary;
+
+            .mat-tab-label-content {
+                background-color: $primary;
+                color: $text-color-secondary;
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        .mat-ink-bar {
+            background-color: transparent;
+        }
+    }
+}
+
+.backdrop {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.2;
+}
+
+.spinner-wrap {
+    grid-column: 1 / -1;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+    // touch-action: pan-y;
+}
+
+.no-scroll {
+    touch-action: pan-x;
+}
+
+
+#oval-3024,
+.dot {
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        
+    }
+    
+    
+    &::before {
+        left: 0;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 0.5px;
+        transform: translateY(-50%) rotate(-45deg);
+
+        @include for-desktop-up {
+            height: 1px;
+        }
+    }
+
+    &::after {
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-top: 1.5px solid transparent;
+        border-left: 3px solid #FFFFFF;
+        border-bottom: 1.5px solid transparent;
+        transform-origin: center right;
+        transform: translate(-100%, -50%) rotate(-45deg);
+
+
+        @include for-desktop-up {
+            border-top: 3px solid transparent;
+            border-left: 5px solid #FFFFFF;
+            border-bottom: 3px solid transparent;
+        }
+    }
+}

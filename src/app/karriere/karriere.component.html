@@ -1,0 +1,64 @@
+<div class="container carrier">
+    <section class="carrier__info">
+        <p>{{'career.info.pr1' | translate }}</p>
+        <p>{{'career.info.pr2' | translate }}</p>
+    </section>
+    <section class="carrier__table table">
+        <div class="table__header row row--space-btw">
+            <h3 class="position__header-title no-margin" translate="career.position"></h3>
+            <h3 class="position__header-location no-margin row row--no-wrap" translate="career.location">
+                <i class="fa" [ngClass]="{'fa-sort-alpha-down': asc, 'fa-sort-alpha-up': !asc}" (click)="sortPositions()"></i>
+            </h3>
+        </div>
+        <ng-container *ngFor="let position of positions; let i=index;">
+            <article class="table__item position">
+                <div class="position__short">
+                    <h5 class="position__title">{{position.title}}</h5>
+                    <span class="position__location">{{position.location}}</span>
+                    <i class="fa fa-angle-down position__toggle"
+                        [ngClass]="{'expand': expanded && i === currPosition}"
+                        (click)="togglePosition(i)"></i>
+                </div>
+                <div class="position__long" *ngIf="expanded && i === currPosition"
+                    [ngClass]="{'animations-fancy-expand': expanded, 'animations-fancy-close':!expanded }">
+                    <div class="position__descripion">{{position.descripion}}</div>
+                    <div class="position__tasks mb-20">
+                        <h6 translate="career.tasks"></h6>
+                        <ul>
+                            <li *ngFor="let task of position.tasks">{{task}}</li>
+                        </ul>
+                    </div>
+                    <div class="position__requirements">
+                        <h6 translate="career.requirements"></h6>
+                        <ul>
+                            <li *ngFor="let req of position.requirements">{{req}}</li>
+                        </ul>
+                    </div>
+                    <div class="position__offer">
+                        <h6 translate="career.offer"></h6>
+                        <p>{{position.offer}}</p>
+                    </div>
+                    <div class="position__partner card">
+                        <div class="card__header row mb-30">
+                            <i class="fa fa-user"></i>
+                            <h6 class="no-margin" translate="career.contactPerson"></h6>
+                        </div>
+                        <div class="column mb-30">
+                            <span class="bold mb-10">{{position.partnerName}}</span>
+                            <span class="mb-5">{{position.partnerEmail}}</span>
+                            <span class="mb-5">Mobile: {{position.partnerMobile}}</span>
+                            <span class="mb-5">Telefon: {{position.partnerPhone}}</span>
+                        </div>
+                        <div class="column mb-10">
+                            <span class="bold mb-10">NEUFRA Speditions GmbH</span>
+                            <span class="mb-5">{{position.partnerStreet}}</span>
+                            <span class="mb-5">{{position.partnerCity}}</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </ng-container>
+
+    </section>
+
+</div>

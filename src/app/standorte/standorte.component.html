@@ -1,0 +1,16 @@
+<div class="location" id="locationInfo">
+	<!-- <section class="locations__info container">
+		<p>{{'locations.info' | translate}}</p>
+	</section> -->
+	<section #mapContainer class="locations__map" id="locationMap" [ngClass]="{'active': isMapActive}">
+		<!-- Location Name Button hidden, used to transfer information from the map -->
+		<button #showDetailsBtn class="hidden" id="showDetailsBtn" 
+				(click)="showLocationDetails(showDetailsBtn.textContent)"></button>
+		<div class="map" id="image-map-pro-container"></div>
+	</section>
+	<div class="container row">
+		<div class="dot"></div>
+		<span>{{'locations.centralAccounting' | translate}}</span>
+	</div>
+</div>
+

@@ -1,0 +1,160 @@
+@import "../../../assets/styles/app-variables";
+@import "../../../assets/styles/settings/settings-breakpoints";
+
+.header {
+    width: 100%;
+    
+    
+    .container {
+        height: $header-height-phone;
+        display: flex;
+        position: relative;
+        align-items: center;
+        position: relative;
+
+        @include for-tablet-portrait-up {
+            height: $header-height-tablet-portrait;
+        }
+    
+        @include for-tablet-landscape-up {
+            height: $header-height-tablet-landscape;
+        }
+    
+        @include for-desktop-up {
+            height: $header-height-desktop;
+        }
+    }
+
+    @include for-desktop-up {
+        &::before {
+            content: "";
+            height: 10px;
+            width: 100%;
+            background-color: $primary;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    &__logo {
+        
+        @include for-desktop-up {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            z-index: 2;
+        }
+    }
+
+    &__burger-menu {
+        margin-left: auto;
+        display: flex;
+        transform: rotate(90deg);
+        
+        span {
+            font-weight: $font-weight-bold;
+            font-size: 2*$font-size-base;
+            color: $primary;
+        }
+
+        &:hover span {
+            color: $secondary;
+        }
+
+        @include for-desktop-up {
+            display: none !important;
+        }
+    }
+    
+    &__mini-menu-toggle {
+        display: none;
+        pointer-events: none;
+        position: absolute;
+    }
+
+    .backdrop {
+        z-index: 10;
+
+        @include for-desktop-up {
+            display: none !important;
+        }
+    }
+    
+    &__mini-menu-toggle:checked  ~ &__menu,
+    &__mini-menu-toggle:not(:checked)  + &__burger-menu,
+    &__mini-menu-toggle:checked  ~ .backdrop {
+        display: flex;
+    }
+    
+    &__mini-menu-toggle:not(:checked)  ~ &__menu,
+    &__mini-menu-toggle:checked  + &__burger-menu,
+    &__mini-menu-toggle:not(:checked)  ~ .backdrop {
+        display: none;
+    }
+
+    &__menu {
+        margin-left: auto;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        right: -10px;
+        box-shadow: $primary-shadow;
+        z-index: 100;
+
+        @include for-tablet-portrait-up  {
+            right: -15px;
+        }
+        
+        @include for-tablet-landscape-up  {
+            right: -20px;
+        }
+        
+        @include for-desktop-up {
+            display: flex !important;
+            position: static;
+            box-shadow: none;
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+    }
+
+    // &--reduced {
+    //     height: min-content !important;
+    //     box-shadow: $primary-shadow;
+
+    //     .header__img {
+    //         height: 190px;
+
+    //         @include for-tablet-portrait-up {
+    //             height: 180px;
+    //         }
+    
+    //         @include for-tablet-landscape-up {
+    //             height: 160px;
+    //         }
+    
+    //         @include for-desktop-up {
+    //             top: 150px;
+    //         }
+    //     }
+    // }
+}
+
+select.lang-bar {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: $nav-text-color;
+    font-weight: $font-weight-bold;
+    outline: none;
+    background-color: $primary;
+
+    @include for-desktop-up {
+        background-color: $body-bg;
+        background-image: linear-gradient(45deg, transparent 50%, $nav-text-color 50%), linear-gradient(135deg, $nav-text-color 50%, transparent 50%); 
+        background-position: calc(100% - 20px) calc(0.8em), calc(100% - 15px) calc(0.8em), calc(100% - 2.5em) 0.5em;
+        background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    }
+}
