@@ -34,7 +34,7 @@ export class UnternehmenComponent implements OnInit, AfterViewInit {
 
 	loadDocuments() {
 		this.csvService.getDocumentList(this.currentLanguage.toUpperCase()).subscribe(data => {
-			this.docuList = data.split('\r\n');
+			this.docuList = data.split('\n');
 			this.docuList.shift();
 			this.docuList = this.docuList.map((x: string )=> x.split(','))
 			this.docuList .forEach( x => {

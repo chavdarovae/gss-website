@@ -62,7 +62,7 @@ export class StandorteComponent implements OnInit, AfterViewInit {
 
 	loadMap() {
 		this.csvService.getLocationList().subscribe(data => {
-			const locationsList = data.split('\r\n');
+			const locationsList = data.split('\n');
 			locationsList.shift();
 			locations = [];
 			inputCode = JSON.parse(JSON.stringify(inputData));

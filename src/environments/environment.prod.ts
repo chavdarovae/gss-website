@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  urlNeufra: 'https://chavdarovae.github.io/new-website/'
+  urlNeufra: 'https://neufrait.github.io/neufra.eu/'
 };
