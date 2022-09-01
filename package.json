@@ -1,5 +1,5 @@
 {
-  "name": "neufra-site",
+  "name": "neufra.eu",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod": "ng build --configuration production --base-href https://chavdarovae.github.io/new-website/",
-    "build:prod-test": "ng build --configuration production --base-href http://test.neufraspedition.de/",
+    "build:prod": "ng build --configuration production --base-href https://neufrait.github.io/neufra.eu/",
     "deploy": "ngh --dir dist/neufra-site"
   },
   "private": true,
