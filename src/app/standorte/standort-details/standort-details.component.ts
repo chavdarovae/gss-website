@@ -45,7 +45,9 @@ export class StandortDetailsComponent implements OnInit {
 			dataList.forEach(x => {
 				const member = sortedList.find(m => m.department === x[1]);
 				member.section = x[0];
-				member.name.push(x[2]);
+				const name = x[2].slice(4, x[2].length -1);
+				const gender = x[2].slice(0, 3);
+				member.name.push ({'firstnameAndLastname': name, 'gender': gender});
 				member.email.push(!(x[2].includes('Wolfgang Hast') || x[2].includes('Sandra Hast-Herrendorf'))?
 										this.getEmail(x[2]) : '');
 				member.phoneSuffix.push(x[3]);
@@ -100,10 +102,12 @@ export class StandortDetailsComponent implements OnInit {
 		const name = input.trim()
 			.replace('Hr. ', '')
 			.replace('Fr. ', '')
+			.replace('von ', '')
 			.toLowerCase()
 			.split('ö').join('oe')
 			.split('ü').join('ue')
 			.split('ä').join('ae')
+			.split('ß').join('ss')
 			.split(' ').join('.');
 		return (name + '@neufra.eu');
 	}
