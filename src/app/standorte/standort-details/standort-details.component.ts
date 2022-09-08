@@ -31,11 +31,11 @@ export class StandortDetailsComponent implements OnInit {
 			data = data.split('new line ,').join('new line,');
 			const stringList = data.split('new line,');
 			stringList.shift();
-			
+
 			this.branch = stringList.filter(x => x.includes('Niederlassungsleitung')).map(x => this.getBranchInfo(x));
 			this.branchPhonePrefix = this.branch[0].phone?.trim().slice(0, -1);
 			const dataList = stringList.filter(x => !x.includes('Niederlassungsleitung')).map(x => x.split(','));
-			
+
 			const departments = new Set(dataList.map(x => x[1]));
 			const sortedList: any[] = [];
 			departments.forEach(x => {
@@ -45,11 +45,11 @@ export class StandortDetailsComponent implements OnInit {
 			dataList.forEach(x => {
 				const member = sortedList.find(m => m.department === x[1]);
 				member.section = x[0];
-				const name = x[2].slice(4, x[2].length -1);
+				const name = x[2].slice(4, x[2].length - 1);
 				const gender = x[2].slice(0, 3);
-				member.name.push ({'firstnameAndLastname': name, 'gender': gender});
-				member.email.push(!(x[2].includes('Wolfgang Hast') || x[2].includes('Sandra Hast-Herrendorf'))?
-										this.getEmail(x[2]) : '');
+				member.name.push({ 'firstnameAndLastname': name, 'gender': gender });
+				member.email.push(!(x[2].includes('Wolfgang Hast') || x[2].includes('Sandra Hast-Herrendorf')) ?
+					this.getEmail(x[2]) : '');
 				member.phoneSuffix.push(x[3]);
 				member.phone.push(this.formatNumber((this.branchPhonePrefix + x[3])));
 			});
@@ -78,8 +78,8 @@ export class StandortDetailsComponent implements OnInit {
 			case 'Barcelona':
 				return 'Neufra Logistica Espana S.L.';
 			case 'Budapest':
-				return 'NEUFRA Hungary  Szállítmányozási KFT';
-				case 'Decin':
+				return 'NEUFRA Hungary Szállítmányozási KFT';
+			case 'Decin':
 				return 'NEUFRA spedice s.r.o.';
 			default:
 				return 'NEUFRA Speditions GmbH';
@@ -108,7 +108,8 @@ export class StandortDetailsComponent implements OnInit {
 			.split('ü').join('ue')
 			.split('ä').join('ae')
 			.split('ß').join('ss')
-			.split(' ').join('.');
+			.split(' ').join('.')
+			.split('á').join('a');
 		return (name + '@neufra.eu');
 	}
 
