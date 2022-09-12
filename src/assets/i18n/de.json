@@ -220,6 +220,7 @@
       "Nord": "Nord",
       "Nordbayern":"Nordbayern",
       "Norddeutschland":"Norddeutschland",
+      "Norden":"Norden",
       "Norden / Export": "Norden / Export",
       "Norden / Meck-Pom / Nahverkehr": "Norden / Meck-Pom / Nahverkehr",
       "Nordrhein-Westfalen": "Nordrhein-Westfalen",
@@ -288,6 +289,7 @@
       "Stuttgart / Bodensee / München / Nahverkehr": "Stuttgart / Bodensee / München / Nahverkehr",
       "Stuttgart / Ulm / Freiburg": "Stuttgart / Ulm / Freiburg",
       "Süd": "Süd",
+      "Süden":"Süden",
       "Süden / Nahverkehr": "Süden / Nahverkehr",
       "Südbayern / Allgäu / Nürnberg / Nordbayern": "Südbayern / Allgäu / Nürnberg / Nordbayern",
       "Süddeutschland": "Süddeutschland",
@@ -302,6 +304,7 @@
       "West": "West",
       "West- und Nordeuropa": "West- und Nordeuropa",
       "West / Hannover": "West / Hannover",
+      "Westen / BeNeLux": "Westen / BeNeLux",
       "Westdeutschland / BeNeLux": "Westdeutschland / BeNeLux",
       "Würzburg / Nürnberg / Regensburg": "Würzburg / Nürnberg / Regensburg"
     },
