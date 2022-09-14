@@ -351,7 +351,7 @@
       "West / Hannover": "West / Hannover",
       "Westen / BeNeLux": "Westen / BeNeLux",
       "Westdeutschland / BeNeLux": "Westdeutschland / BeNeLux",
-      
+
       "Würzburg / Nürnberg / Regensburg": "Würzburg / Nürnberg / Regensburg"
     },
     "branch": {
@@ -456,6 +456,7 @@
     "responsible": "I. Name und Anschrift des Verantwortlichen",
     "responsibleInfo": "Der Verantwortliche im Sinne der  Datenschutz-Grundverordnung und anderer nationaler Datenschutzgesetze der  Mitgliedsstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist die:",
     "dataprotectionOfficer": "II. Name und Anschrift des Datenschutzbeauftragten",
+    "dataprotectionOfficerInfo": "Der Datenschutzbeauftragte des Verantwortlichen ist:",
     "dataprocessing": "III. Allgemeines zur Datenverarbeitung",
     "dataprocessingSection1": "1. Umfang der Verarbeitung personenbezogener Daten",
     "dataprocessingSection1Info": "Wir verarbeiten personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist.",
@@ -541,7 +542,7 @@
     "rightsSection9Info2": "Allerdings dürfen diese Entscheidungen nicht auf besonderen Kategorien personenbezogener Daten nach Art. 9 Abs. 1 DSGVO beruhen, sofern nicht Art. 9 Abs. 2 lit. a oder g gilt und angemessene Maßnahmen zum Schutz der Rechte und Freiheiten sowie Ihrer berechtigten Interessen getroffen wurden. Hinsichtlich der in (1) und (3) genannten Fälle trifft der Verantwortliche angemessene Maßnahmen, um die Rechte und Freiheiten sowie Ihre berechtigten Interessen zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.",
     "rightsSection10": "10. Recht auf Beschwerde bei einer Aufsichtsbehörde",
     "rightsSection10Info": "Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt. Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet den Beschwerdeführer über den Stand und die Ergebnisse der Beschwerde einschließlich der Möglichkeit eines gerichtlichen Rechtsbehelfs nach Art. 78 DSGVO.",
-    "date": "Stand Mai 2018"
+    "date": "Stand September 2022"
   },
   "footer": {
     "legalNotice": "impressum",
