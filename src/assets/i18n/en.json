@@ -62,6 +62,8 @@
     "branchManagement": "Branch Management",
     "nationalDisposition": "National Disposition",
     "internationalDisposition": "International Disposition",
+    "importDisposition": "Import",
+    "exportDisposition": "Export",
     "management": "Administration",
     "humanResources": "Human Resources",
     "accounting": "Accounting",

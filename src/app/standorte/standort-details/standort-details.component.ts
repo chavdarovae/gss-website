@@ -12,6 +12,8 @@ export class StandortDetailsComponent implements OnInit {
 	branch: BranchInfo[] = [];
 	nationalDisposition: PersonelInfo[] = [];
 	internationalDisposition: PersonelInfo[] = [];
+	importDisposition: PersonelInfo[] = [];
+	exportDisposition: PersonelInfo[] = [];
 	management: PersonelInfo[] = [];
 	executiveManagement: PersonelInfo[] = [];
 	humanResources: PersonelInfo[] = [];
@@ -56,6 +58,8 @@ export class StandortDetailsComponent implements OnInit {
 
 			this.nationalDisposition = sortedList.filter(x => x.section.trim() === 'Disposition National');
 			this.internationalDisposition = sortedList.filter(x => x.section.trim() === 'Disposition International');
+			this.importDisposition = sortedList.filter(x => x.section.trim() === 'Import');
+			this.exportDisposition = sortedList.filter(x => x.section.trim() === 'Export');
 			this.management = sortedList.filter(x => x.section.trim() === 'Verwaltung');
 			this.executiveManagement = sortedList.filter(x => x.section.trim() === 'Geschäftsleitung');
 			this.humanResources = sortedList.filter(x => x.section.trim() === 'Personalabteilung');

@@ -62,6 +62,8 @@
     "branchManagement": "Niederlassungsleitung",
     "nationalDisposition": "Disposition National",
     "internationalDisposition": "Disposition International",
+    "importDisposition": "Import",
+    "exportDisposition": "Export",
     "management": "Verwaltung",
     "humanResources": "Personalabteilung",
     "accounting": "Buchhaltung",
