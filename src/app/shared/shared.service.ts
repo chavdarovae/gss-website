@@ -8,6 +8,10 @@ export class SharedService {
 	private infoSeen$ = new BehaviorSubject<boolean>(false);
 	locationInfoSeen$ = this.infoSeen$.asObservable();
 
+	currLang: string = (sessionStorage.getItem('Nuefra-lang') ? sessionStorage.getItem('Nuefra-lang') : 'de') as string;
+	private currLangSubject = new BehaviorSubject<string>(this.currLang);
+	currLang$ = this.currLangSubject.asObservable();
+
 	constructor() {
 	}
 
@@ -17,5 +21,9 @@ export class SharedService {
 
 	isMobileDevice(): boolean {
 		return window.innerWidth < 500;
+	}
+
+	setNewLanugage(lang: string) {
+		this.currLangSubject.next(lang);
 	}
 }

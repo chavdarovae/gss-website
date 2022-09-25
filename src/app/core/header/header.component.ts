@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 	imgPrefix = isDevMode() ? '../../../assets/img/' : './assets/img/';
 	baseUrl = environment.urlNeufra;
 	showWellcomeMessage = true;
-	
+
 	@ViewChild('wellcomeMessage') wellcomeMessage: ElementRef;
 
 	constructor(
@@ -68,6 +68,8 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
 	//Switch language
 	translateLanguageTo(lang: string) {
+		this.sharedService.setNewLanugage(lang);
+		sessionStorage.setItem('Nuefra-lang', lang);
 		this.translate.use(lang);
 	}
 }

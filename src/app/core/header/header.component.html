@@ -1,6 +1,6 @@
 <div class="header row row--centered" [ngClass]="{'header--reduced': activeTab==='standorte'}">
     <div class="container">
-        <a [href]="baseUrl + 'home'" class="header__logo logo">
+        <a routerLink="/home" class="header__logo logo">
             <div class="logo__img"><img [src]="imgPrefix + 'Logo Neufra small.jpg'" alt="Logo Neufra"></div>
         </a>
         <input type="checkbox" class="header__mini-menu-toggle" id="menu-toggle">
@@ -72,7 +72,7 @@
             <h4>{{'header.home-subtitle' | translate}}</h4>
             <i class="fa fa-angle-down animation-bounce" (click)="showDetails()"></i>
         </div>
-        <div *ngIf="activeTab === 'standorte' && !isInfoSeenForCurrentSession()" 
+        <div *ngIf="activeTab === 'standorte' && !isInfoSeenForCurrentSession()"
             class="poster__img-title--home show-on-mobile">
             <p>{{'locations.info' | translate}}</p>
             <a [href]="baseUrl + 'standorte#locationMap'">
@@ -83,7 +83,7 @@
 </div>
 
 <ng-template #languageBar>
-    <select #langBar class="lang-bar" (change)="translateLanguageTo(langBar.value)">
+    <select #langBar *ngIf="(sharedService.currLang$ | async) as lang" [value]="lang" class="lang-bar" (change)="translateLanguageTo(langBar.value)">
         <option value="de">DE</option>
         <option value="en">EN</option>
         <!-- <option value="fr">FR</option> -->
