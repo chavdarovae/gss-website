@@ -69,6 +69,7 @@
     "accounting": "Accounting",
     "centralAccounting": "Central Accounting",
     "executiveManagement": "Executive Management",
+    "managementDetails": "Management Details",
     "department": {
       "Abrechnung": "Accounting",
       "Abrechnung / Lademittel": "Settlement / Loading equipment",

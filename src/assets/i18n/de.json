@@ -69,6 +69,7 @@
     "accounting": "Buchhaltung",
     "centralAccounting": "Zentralbuchhaltung",
     "executiveManagement": "Geschäftsleitung",
+    "managementDetails": "Geschäftsangaben",
     "department": {
       "Abrechnung": "Abrechnung",
       "Abrechnung / Lademittel": "Abrechnung / Lademittel",
@@ -409,6 +410,8 @@
     "shareholders": "Gesellschafter",
     "managingDirectors": "Geschäftsführer",
     "commerciaRegister": "Handelsregister",
+    "companyRegistrationNumber": "Firmenbuch Nummer",
+    "headquarters": "Sitz der Gesellschaft",
     "useNotice": "Nutzungs- und rechtliche Hinweise",
     "info": "Die Informationen auf diesen Webseiten wurden sorgfältig zusammengestellt. Trotz aller Sorgfalt können Fehler auftreten. Daher weisen wir ausdrücklich darauf hin, dass wir keine Haftung oder Garantie für die Vollständigkeit, Aktualität und Richtigkeit dieser bereitgestellten Informationen übernehmen. Wir übernehmen auch keine Haftung oder Garantie für die Inhalte externer Links. Für die Inhalte der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Alle Nutzer erklären ihr Einverständnis damit, dass die Nutzung der Webseite auf ihr eigenes Risiko erfolgt."
   },

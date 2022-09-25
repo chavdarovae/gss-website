@@ -2,6 +2,7 @@ import { Component, Inject, isDevMode, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BranchInfo, PersonelInfo } from 'src/app/model/data.model';
 import { CsvService } from 'src/app/shared/csv.service';
+import { ADDITIONAL_DATA } from 'src/assets/files/additional-data';
 
 @Component({
 	selector: 'app-standort-details',
@@ -21,6 +22,8 @@ export class StandortDetailsComponent implements OnInit {
 	branchPhonePrefix: string | undefined;
 	centralAccounting: PersonelInfo[] = [];
 	urlPrefix = isDevMode() ? '../../../' : './';
+  showAdditionalData = false;
+  additonalData: { management: string[], court?: string, headquarters?: string, taxNumber?: string, vtaNumber?: string, companyRegistrationNumber?: string, text?: string[] };
 
 
 	constructor(
@@ -29,6 +32,14 @@ export class StandortDetailsComponent implements OnInit {
 	) { }
 
 	ngOnInit(): void {
+    this.getLocationDetails();
+    this.showAdditionalData = ['Poznan', 'Decin', 'Budapest', 'Wien', 'Verona'].includes(this.data.location);
+    if(this.showAdditionalData) {
+      this.additonalData = ADDITIONAL_DATA[`${this.data.location}`];
+    }
+	}
+
+  getLocationDetails() {
 		this.csvService.getLocationDetails(this.data.location).subscribe(data => {
 			data = data.split('new line ,').join('new line,');
 			const stringList = data.split('new line,');
@@ -66,7 +77,7 @@ export class StandortDetailsComponent implements OnInit {
 			this.accounting = sortedList.filter(x => x.section.trim() === 'Buchhaltung');
 			this.centralAccounting = sortedList.filter(x => x.section.trim() === 'Zentralbuchhaltung');
 		});
-	}
+  }
 
 	getNameOfTheCompany() {
 		switch (this.data.location) {
@@ -97,8 +108,8 @@ export class StandortDetailsComponent implements OnInit {
 			city: branch[0].split('/')[1],
 			branchLeader: branch[1],
 			email: this.getEmail(branch[1]),
-			phone: branch[2],
-			fax: branch[3]
+			phone: branch[2].trim(),
+			fax: branch[3].trim()
 		}
 	}
 
