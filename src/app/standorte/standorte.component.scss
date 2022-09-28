@@ -10,7 +10,7 @@
     position: relative;
     z-index: 4;
     // touch-action: pan-y;
-    
+
     &.active {
         // z-index: 4;
         // border: 1px solid red;
@@ -60,7 +60,7 @@
             transform: translate(-43%, -62%);
         }
     }
-} 
+}
 
 .container {
     padding: 20px 0 0 0;

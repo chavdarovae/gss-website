@@ -4,13 +4,19 @@
 	</section> -->
 	<section #mapContainer class="locations__map" id="locationMap" [ngClass]="{'active': isMapActive}">
 		<!-- Location Name Button hidden, used to transfer information from the map -->
-		<button #showDetailsBtn class="hidden" id="showDetailsBtn" 
+		<button #showDetailsBtn class="hidden" id="showDetailsBtn"
 				(click)="showLocationDetails(showDetailsBtn.textContent)"></button>
 		<div class="map" id="image-map-pro-container"></div>
 	</section>
 	<div class="container row">
-		<div class="dot"></div>
-		<span>{{'locations.centralAccounting' | translate}}</span>
+		<div class="row  mr-30">
+			<div class="dot arrow"></div>
+			<span>{{'locations.centralAccountingAndHeadquarters' | translate}}</span>
+		</div>
+		<div class="row">
+			<div class="dot doted"></div>
+			<span>{{'locations.headquarters' | translate}}</span>
+		</div>
 	</div>
 </div>
 

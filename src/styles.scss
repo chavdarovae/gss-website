@@ -159,17 +159,17 @@ body {
 
 
 #oval-3024,
-.dot {
+.arrow {
     &::before,
     &::after {
         content: "";
         display: block;
         position: absolute;
         top: 50%;
-        
+
     }
-    
-    
+
+
     &::before {
         left: 0;
         background-color: #FFFFFF;
@@ -198,5 +198,26 @@ body {
             border-left: 5px solid #FFFFFF;
             border-bottom: 3px solid transparent;
         }
+    }
+}
+
+
+#oval-3036,
+#oval-3040,
+#oval-3034,
+#oval-3033,
+#oval-3038,
+.doted {
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+		left: 50%;
+        background-color: #FFFFFF;
+		border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        transform: translate(-56%, -56%);
     }
 }
