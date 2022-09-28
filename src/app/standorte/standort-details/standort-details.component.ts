@@ -1,15 +1,15 @@
-import { Component, Inject, isDevMode, OnInit } from '@angular/core';
+import { AfterViewInit, Component, Inject, isDevMode, OnInit, ViewChild } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatTabGroup } from '@angular/material/tabs';
 import { BranchInfo, PersonelInfo } from 'src/app/model/data.model';
 import { CsvService } from 'src/app/shared/csv.service';
 import { ADDITIONAL_DATA } from 'src/assets/files/additional-data';
-
 @Component({
 	selector: 'app-standort-details',
 	templateUrl: './standort-details.component.html',
 	styleUrls: ['./standort-details.component.scss']
 })
-export class StandortDetailsComponent implements OnInit {
+export class StandortDetailsComponent implements OnInit, AfterViewInit {
 	branch: BranchInfo[] = [];
 	nationalDisposition: PersonelInfo[] = [];
 	internationalDisposition: PersonelInfo[] = [];
@@ -22,9 +22,10 @@ export class StandortDetailsComponent implements OnInit {
 	branchPhonePrefix: string | undefined;
 	centralAccounting: PersonelInfo[] = [];
 	urlPrefix = isDevMode() ? '../../../' : './';
-  showAdditionalData = false;
-  additonalData: { management: string[], court?: string, headquarters?: string, taxNumber?: string, vtaNumber?: string, companyRegistrationNumber?: string, text?: string[] };
+	showAdditionalData = false;
+	additonalData: { management: string[], court?: string, headquarters?: string, taxNumber?: string, vtaNumber?: string, companyRegistrationNumber?: string, text?: string[] };
 
+	@ViewChild('matTabGroup') tabGroup: MatTabGroup;
 
 	constructor(
 		@Inject(MAT_DIALOG_DATA) public data: { location: string },
@@ -32,14 +33,20 @@ export class StandortDetailsComponent implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-    this.getLocationDetails();
-    this.showAdditionalData = ['Poznan', 'Decin', 'Budapest', 'Wien', 'Verona'].includes(this.data.location);
-    if(this.showAdditionalData) {
-      this.additonalData = ADDITIONAL_DATA[`${this.data.location}`];
-    }
+		this.getLocationDetails();
+		this.showAdditionalData = ['Poznan', 'Decin', 'Budapest', 'Wien', 'Verona'].includes(this.data.location);
+		if (this.showAdditionalData) {
+			this.additonalData = ADDITIONAL_DATA[`${this.data.location}`];
+		}
 	}
 
-  getLocationDetails() {
+	ngAfterViewInit(): void {
+		setTimeout(() => {
+			this.tabGroup.selectedIndex = 0;
+		}, 100);
+	}
+
+	getLocationDetails() {
 		this.csvService.getLocationDetails(this.data.location).subscribe(data => {
 			data = data.split('new line ,').join('new line,');
 			const stringList = data.split('new line,');
@@ -77,7 +84,7 @@ export class StandortDetailsComponent implements OnInit {
 			this.accounting = sortedList.filter(x => x.section.trim() === 'Buchhaltung');
 			this.centralAccounting = sortedList.filter(x => x.section.trim() === 'Zentralbuchhaltung');
 		});
-  }
+	}
 
 	getNameOfTheCompany() {
 		switch (this.data.location) {

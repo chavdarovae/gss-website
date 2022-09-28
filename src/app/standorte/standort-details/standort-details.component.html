@@ -40,7 +40,7 @@
 	</div>
 
 	<div class="loc__right-panel">
-		<mat-tab-group class="tab">
+		<mat-tab-group #matTabGroup mat-align-tabs="start" class="tab">
 			<mat-tab *ngIf="nationalDisposition.length > 0" class="tab__section"
 				[label]="'locations.nationalDisposition' | translate">
 				<ng-container *ngTemplateOutlet="personelTable; context: { personelData: nationalDisposition }">
