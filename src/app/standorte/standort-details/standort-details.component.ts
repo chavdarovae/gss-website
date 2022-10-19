@@ -34,7 +34,7 @@ export class StandortDetailsComponent implements OnInit, AfterViewInit {
 
 	ngOnInit(): void {
 		this.getLocationDetails();
-		this.showAdditionalData = ['Poznan', 'Decin', 'Budapest', 'Wien', 'Verona'].includes(this.data.location);
+		this.showAdditionalData = ['Poznan', 'Decin', 'Budapest', 'Wien', 'Barcelona', 'NEU'].includes(this.data.location);
 		if (this.showAdditionalData) {
 			this.additonalData = ADDITIONAL_DATA[`${this.data.location}`];
 		}

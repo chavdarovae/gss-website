@@ -87,31 +87,31 @@
 				</div>
 
 				<div class="col">
-					<div *ngIf="additonalData.headquarters" class="row">
+					<div *ngIf="additonalData.headquarters" class="row mb-5">
 						<span class="bold">{{'legalNotice.headquarters' | translate}}:&nbsp;</span>
 						<span>{{additonalData.headquarters}}</span>
 					</div>
 
-					<div *ngIf="additonalData.court" class="row">
+					<div *ngIf="additonalData.court" class="row mb-5">
 						<span class="bold">{{'legalNotice.court' | translate}}:&nbsp;</span>
 						<span>{{additonalData.court}}</span>
 					</div>
 
-					<div *ngIf="additonalData.companyRegistrationNumber" class="row">
+					<div *ngIf="additonalData.companyRegistrationNumber" class="row mb-5">
 						<span class="bold">{{'legalNotice.companyRegistrationNumber' | translate}}:&nbsp;</span>
 						<span>{{additonalData.companyRegistrationNumber}}</span>
 					</div>
 
-					<div *ngIf="additonalData.taxNumber" class="row">
+					<div *ngIf="additonalData.taxNumber" class="row mb-5">
 						<span class="bold">{{'legalNotice.taxNumber' | translate}}:&nbsp;</span>
 						<span>{{additonalData.taxNumber}}</span>
 					</div>
 
-					<div *ngIf="additonalData.text" class="col">
+					<div *ngIf="additonalData.text" class="col mb-5">
 						<div *ngFor="let line of additonalData.text">{{line}}</div>
 					</div>
 
-					<div *ngIf="additonalData.vtaNumber" class="row">
+					<div *ngIf="additonalData.vtaNumber" class="row mb-5">
 						<span class="bold">{{'legalNotice.vatId' | translate}}:&nbsp;</span>
 						<span>{{additonalData.vtaNumber}}</span>
 					</div>
