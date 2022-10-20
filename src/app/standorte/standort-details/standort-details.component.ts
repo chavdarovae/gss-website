@@ -34,10 +34,7 @@ export class StandortDetailsComponent implements OnInit, AfterViewInit {
 
 	ngOnInit(): void {
 		this.getLocationDetails();
-		this.showAdditionalData = ['Poznan', 'Decin', 'Budapest', 'Wien', 'Barcelona', 'Verona', 'NEU'].includes(this.data.location);
-		if (this.showAdditionalData) {
-			this.additonalData = ADDITIONAL_DATA[`${this.data.location}`];
-		}
+
 	}
 
 	ngAfterViewInit(): void {
@@ -83,6 +80,10 @@ export class StandortDetailsComponent implements OnInit, AfterViewInit {
 			this.humanResources = sortedList.filter(x => x.section.trim() === 'Personalabteilung');
 			this.accounting = sortedList.filter(x => x.section.trim() === 'Buchhaltung');
 			this.centralAccounting = sortedList.filter(x => x.section.trim() === 'Zentralbuchhaltung');
+			this.showAdditionalData = ['Poznan', 'Decin', 'Budapest', 'Wien', 'Barcelona', 'Verona', 'NEU'].includes(this.data.location);
+			if (this.showAdditionalData) {
+				this.additonalData = ADDITIONAL_DATA[`${this.data.location}`];
+			}
 		});
 	}
 
