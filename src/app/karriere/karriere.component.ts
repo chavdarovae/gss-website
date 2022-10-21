@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
 import { Language, PositionInfo } from '../model/data.model';
 import { CsvService } from '../shared/csv.service';
+import { InternshipComponent } from './internship/internship.component';
 
 @Component({
 	selector: 'app-karriere',
@@ -17,8 +19,9 @@ export class KarriereComponent implements OnInit {
 
 	constructor(
 		private csvService: CsvService,
-		private translate: TranslateService
-	) { 
+		private translate: TranslateService,
+		private matDialog: MatDialog
+	) {
 		this.currentLanguage = this.translate.currentLang;
 		translate.onLangChange.subscribe((event: LangChangeEvent) => {
             this.currentLanguage = event.lang
@@ -93,5 +96,15 @@ export class KarriereComponent implements OnInit {
 	formatNumber(numberStr: string) {
 		const number = numberStr.split(' ').join('').split('-').join('');
 		return number.replace(/(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/g, "$1 $2 $3 - $4 $5 - ");
+	}
+
+	showInternshipDetails(type: any) {
+		const dialogRef = this.matDialog.open(InternshipComponent, {
+			data: { type },
+			panelClass: 'dialog'
+		});
+
+		dialogRef.afterClosed().subscribe(() => {
+		});
 	}
 }

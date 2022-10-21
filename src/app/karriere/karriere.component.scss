@@ -2,11 +2,18 @@
 @import "../../assets/styles/settings/settings-breakpoints";
 
 .carrier {
-    &__info {
 
+
+    &__info {
+		&-more {
+			margin-left: 10px;
+			color: $info;
+			cursor: pointer;
+		}
+		margin-bottom: 50px;
     }
 
-    &__table{
+	&__table{
 
     }
 }
@@ -174,6 +181,7 @@
         &__partner {
             grid-area: partner;
 			align-self: end;
+			margin-bottom: 20px;
         }
     }
 }

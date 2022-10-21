@@ -25,6 +25,7 @@ import { StandortDetailsComponent } from './standorte/standort-details/standort-
 import { StandorteComponent } from './standorte/standorte.component';
 import { TransportunternehmerComponent } from './transportunternehmer/transportunternehmer.component';
 import { UnternehmenComponent } from './unternehmen/unternehmen.component';
+import { InternshipComponent } from './karriere/internship/internship.component';
 
 // Factory function required during AOT compilation
 export function httpTranslateLoaderFactory(http: HttpClient) {
@@ -43,7 +44,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
     ImpressumComponent,
     DatenschutzComponent,
     HomeComponent,
-    StandortDetailsComponent
+    StandortDetailsComponent,
+    InternshipComponent
   ],
   imports: [
     BrowserModule,
