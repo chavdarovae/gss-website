@@ -7,7 +7,7 @@
     }
 
     &__table{
-        
+
     }
 }
 
@@ -48,18 +48,18 @@
     &__header {
         padding: 10px 10px;
         border-bottom: 3px solid $primary;
-        grid-template-areas: 
+        grid-template-areas:
             "headerTitle headerLocation";
 
         @include for-tablet-portrait-up  {
             padding: 10px 20px;
-            grid-template-areas: 
+            grid-template-areas:
             "headerTitle . headerLocation";
         }
 
         @include for-desktop-up {
             padding: 10px 30px;
-            grid-template-areas: 
+            grid-template-areas:
             "headerTitle headerLocation headerLocation";
         }
 
@@ -69,34 +69,34 @@
         }
 
     }
-    
+
     .position {
         width: 100%;
         border-bottom: 3px solid $primary;
-    
+
         &__short {
             padding: 20px 10px 15px 10px;
-            grid-template-areas: 
+            grid-template-areas:
             "title location"
             "title toggle";
 
             @include for-tablet-portrait-up  {
                 padding: 20px 30px 15px 20px;
-                grid-template-areas: 
+                grid-template-areas:
                 "title title location"
                 "title title toggle";
             }
 
             @include for-desktop-up {
                 padding: 20px 30px 15px 30px;
-                grid-template-areas: 
+                grid-template-areas:
                 "title location toggle";
             }
         }
-    
+
         &__long {
             padding: 0 10px 30px 10px;
-            grid-template-areas: 
+            grid-template-areas:
             "descripion descripion"
             "tasks tasks"
             "requirements requirements"
@@ -105,19 +105,19 @@
 
             @include for-tablet-portrait-up {
                 padding: 0 20px 30px 20px;
-                grid-template-areas: 
+                grid-template-areas:
                 "descripion descripion descripion"
                 "tasks tasks tasks"
-                "requirements requirements requirements"
+                "requirements partner partner"
                 "offer partner partner";
             }
 
             @include for-desktop-up {
                 padding: 0 30px 30px 30px;
-                grid-template-areas: 
+                grid-template-areas:
                 "descripion descripion descripion"
                 "tasks tasks tasks"
-                "requirements requirements requirements"
+                "requirements partner partner"
                 "offer partner partner";
             }
         }
@@ -129,15 +129,15 @@
         &__header-location {
             grid-area: headerLocation;
         }
-        
+
         &__title {
             grid-area: title;
         }
-    
+
         &__location {
             grid-area: location;
         }
-    
+
         &__toggle {
             grid-area: toggle;
             width: 30px;
@@ -149,30 +149,31 @@
             &.fa-angle-down{
                 transform: rotate(0deg);
             }
-              
+
             &.fa-angle-down.expand {
                 transform: rotate(180deg);
             }
         }
-    
+
         &__descripion {
             grid-area: descripion;
         }
-    
+
         &__tasks {
             grid-area: tasks;
         }
-    
+
         &__requirements {
             grid-area: requirements;
         }
-    
+
         &__offer {
             grid-area: offer;
         }
-    
+
         &__partner {
             grid-area: partner;
+			align-self: end;
         }
     }
 }
