@@ -45,14 +45,30 @@
                         </div>
                         <div class="column mb-30">
                             <span class="bold mb-10">{{position.partnerName}}</span>
-                            <span class="mb-5">{{position.partnerEmail}}</span>
-                            <span class="mb-5">Mobile: {{position.partnerMobile}}</span>
-                            <span class="mb-5">Telefon: {{position.partnerPhone}}</span>
+							<a class="mb-5" [href]="'mailto:' + position.partnerEmail">{{position.partnerEmail}}</a>
+							<a class="mb-5" [href]="'tel:' + position.partnerMobile">{{position.partnerMobile}}</a>
+							<a class="mb-5" [href]="'tel:' + position.partnerPhone">{{position.partnerPhone}}</a>
                         </div>
                         <div class="column mb-10">
-                            <span class="bold mb-10">NEUFRA Speditions GmbH</span>
-                            <span class="mb-5">{{position.partnerStreet}}</span>
-                            <span class="mb-5">{{position.partnerCity}}</span>
+							<ng-container [ngSwitch]="position.location.trim()">
+								<span class="bold mb-10" *ngSwitchCase="'Bregenz'">NEUFRA Speditions Ges.m.b.H.</span>
+								<span class="bold mb-10" *ngSwitchCase="'Wien'">NEUFRA Speditions Ges.m.b.H.</span>
+								<span class="bold mb-10" *ngSwitchCase="'Linz'">NEUFRA Speditions Ges.m.b.H.</span>
+								<span class="bold mb-10" *ngSwitchCase="'Poznan'">NEUFRA Spedition Polska sp. z o.o.</span>
+								<span class="bold mb-10" *ngSwitchCase="'Děčín'">NEUFRA spedice s.r.o.</span>
+								<span class="bold mb-10" *ngSwitchCase="'Budapest'">NEUFRA Hungary Szállítmányozási KFT</span>
+								<span class="bold mb-10" *ngSwitchCase="'Milano'">Neufra Spedizioni Italia s.r.l.</span>
+								<span class="bold mb-10" *ngSwitchCase="'Verona'">Neufra Spedizioni Italia s.r.l.</span>
+								<span class="bold mb-10" *ngSwitchCase="'Barcelona'">Neufra Logistica Espana S.L.</span>
+								<span class="bold mb-10" *ngSwitchDefault>NEUFRA Speditions GmbH</span>
+							</ng-container>
+
+							<a class="details__adr" [href]="'https://maps.google.com/?q=' + position.partnerStreet + ',' + position.partnerCity">
+								<span class="column">
+									<span>{{position.partnerStreet}}</span>
+									<span>{{position.partnerCity}}</span>
+								</span>
+							</a>
                         </div>
                     </div>
                 </div>
