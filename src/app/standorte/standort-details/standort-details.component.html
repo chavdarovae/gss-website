@@ -28,7 +28,7 @@
 		<div class="card card--person">
 			<h5 class="mb-20" translate="locations.branchManagement"></h5>
 			<span class="link-with-icon"><img class="show-on-tablet-portrait"
-					[src]="urlPrefix + 'assets/icons/person.svg'" /> {{branch[1]?.branchLeader}}</span>
+					[src]="urlPrefix + 'assets/icons/person.svg'" /> {{branch[1]?.leader}}</span>
 			<a class="link-with-icon" [href]="'tel:' + branch[1]?.phone"><img class="show-on-tablet-portrait"
 					[src]="urlPrefix + 'assets/icons/phone.svg'" /> {{branch[1]?.phone}}</a>
 			<a *ngIf="branch[1]?.fax" class="link-with-icon" [href]="'tel:' + branch[1]?.fax"><img
@@ -36,6 +36,19 @@
 					[src]="urlPrefix + 'assets/icons/mobile.svg'" />{{branch[1]?.fax}}</a>
 			<a class="link-with-icon" [href]="'mailto:' + branch[1]?.email"><img class="show-on-tablet-portrait"
 					[src]="urlPrefix + 'assets/icons/email.svg'" /> {{branch[1]?.email}}</a>
+
+			<ng-container *ngIf="branch[2]?.leader">
+				<h5 class="mb-20 mt-50" translate="locations.branchDeputyManagement"></h5>
+				<span class="link-with-icon"><img class="show-on-tablet-portrait"
+						[src]="urlPrefix + 'assets/icons/person.svg'" /> {{branch[2]?.leader}}</span>
+				<a class="link-with-icon" [href]="'tel:' + branch[2]?.phone"><img class="show-on-tablet-portrait"
+						[src]="urlPrefix + 'assets/icons/phone.svg'" /> {{branch[2]?.phone}}</a>
+				<a *ngIf="branch[2]?.fax" class="link-with-icon" [href]="'tel:' + branch[2]?.fax"><img
+						class="show-on-tablet-portrait"
+						[src]="urlPrefix + 'assets/icons/mobile.svg'" />{{branch[2]?.fax}}</a>
+				<a class="link-with-icon" [href]="'mailto:' + branch[2]?.email"><img class="show-on-tablet-portrait"
+						[src]="urlPrefix + 'assets/icons/email.svg'" /> {{branch[2]?.email}}</a>
+			</ng-container>
 		</div>
 	</div>
 

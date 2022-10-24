@@ -13,7 +13,7 @@ export class BranchInfo {
     constructor(
         public address?: string,
         public city?: string,
-        public branchLeader?: string,
+		public leader?: string,
         public email?: string,
         public phone?: string,
         public fax?: string,

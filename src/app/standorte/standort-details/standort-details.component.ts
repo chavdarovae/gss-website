@@ -40,7 +40,7 @@ export class StandortDetailsComponent implements OnInit {
 			const stringList = data.split('new line,');
 			stringList.shift();
 
-			this.branch = stringList.filter(x => x.includes('Niederlassungsleitung')).map(x => this.getBranchInfo(x));
+			this.branch = stringList.filter(x => x.includes('Niederlassungsleitung')).map(x => this.getBranchInfo(x, ));
 			this.branchPhonePrefix = this.branch[0].phone?.trim().slice(0, -1);
 			const dataList = stringList.filter(x => !x.includes('Niederlassungsleitung')).map(x => x.split(','));
 
@@ -105,7 +105,7 @@ export class StandortDetailsComponent implements OnInit {
 		return {
 			address: branch[0].split('/')[0].trim(),
 			city: branch[0].split('/')[1],
-			branchLeader: branch[1],
+			leader: branch[1],
 			email: this.getEmail(branch[1]),
 			phone: branch[2].trim(),
 			fax: branch[3].trim()
