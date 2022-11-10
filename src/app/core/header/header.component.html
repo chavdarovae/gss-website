@@ -49,7 +49,7 @@
                 <a routerLink="/impressum" class="menu__item-link" translate="footer.legalNotice"></a>
                 <a routerLink="/datenschutz" class="menu__item-link" translate="footer.dataPrivacy"></a>
             </li>
-            <li class="menu__item  hide-on-tablet">
+            <li class="menu__item  hide-on-tablet" style="visibility:hidden">
                 <ng-container *ngTemplateOutlet="languageBar"></ng-container>
             </li>
         </ul>
@@ -65,9 +65,11 @@
             <p *ngIf="activeTab === 'standorte'" class="poster__img-title poster__img-title--text">
                 {{'locations.info' | translate}}
             </p>
-            <img class="poster__img-pic" [src]="imgPrefix + 'poster-' + activeTab + mobileSuffix + '.jpg'" alt="Poster photo">
+            <img class="poster__img-pic" [src]="imgPrefix + 'poster-' + activeTab + mobileSuffix + '.jpg'"
+                alt="Poster photo">
         </div>
-        <div #wellcomeMessage *ngIf="activeTab === 'home' && showWellcomeMessage" class="poster__img-title--home show-on-mobile">
+        <div #wellcomeMessage *ngIf="activeTab === 'home' && showWellcomeMessage"
+            class="poster__img-title--home show-on-mobile">
             <h1>{{'header.home' | translate}}</h1>
             <h4>{{'header.home-subtitle' | translate}}</h4>
             <i class="fa fa-angle-down animation-bounce" (click)="showDetails()"></i>
@@ -83,7 +85,8 @@
 </div>
 
 <ng-template #languageBar>
-    <select #langBar *ngIf="(sharedService.currLang$ | async) as lang" [value]="lang" class="lang-bar" (change)="translateLanguageTo(langBar.value)">
+    <select #langBar *ngIf="(sharedService.currLang$ | async) as lang" [value]="lang" class="lang-bar"
+        (change)="translateLanguageTo(langBar.value)">
         <option value="de">DE</option>
         <option value="en">EN</option>
         <!-- <option value="fr">FR</option> -->
