@@ -5,12 +5,10 @@
 
 
     &__info {
+		margin-bottom: 50px;
 		&-more {
 			margin-left: 10px;
-			color: $info;
-			cursor: pointer;
 		}
-		margin-bottom: 50px;
     }
 
 	&__table{
@@ -27,6 +25,14 @@
             color: $text-color-primary;
         }
     }
+
+	.position__short {
+		cursor: pointer;
+
+		h5:hover {
+            color: $text-color-thirdery;
+        }
+	}
 
     &__header,
     .position__short,
@@ -206,3 +212,14 @@
         color: $text-color-secondary;
     }
 }
+
+
+ul {
+	margin-left: 20px;
+
+	li {
+		vertical-align: middle;
+		list-style-position: outside;
+	}
+}
+

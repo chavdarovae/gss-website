@@ -54,7 +54,10 @@ export class KarriereComponent implements OnInit {
 			const position = x.split(',');
 			const label = position[0];
 			position.shift();
-			const text = position.join(',');
+			let text = position.join(',').trim();
+			if (text[0] === '"') {
+				text = text.substring(1, text.length - 1);
+			}
 			const simpleLabels = ['title', 'location', 'description', 'offer', 'other', 'partnerName', 'partnerMobile', 'partnerCity', 'partnerStreet', 'partnerPhone'];
 			const complexLabels = ['tasks', 'requirements'];
 			if (label === 'partnerName') {
@@ -64,6 +67,7 @@ export class KarriereComponent implements OnInit {
 				posObj.partnerPhone = this.formatNumber(text);
 			}
 			if (complexLabels.includes(label)) {
+
 				posObj[`${label}`].push(text);
 			} else if (simpleLabels.includes(label)) {
 				posObj[`${label}`] = text;
