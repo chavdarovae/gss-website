@@ -25,14 +25,14 @@ export class TransportunternehmerComponent implements OnInit {
 	goTo() {
 		if(this.sharedService.isMobileDevice()) {
 			if (!!sessionStorage.getItem('setLocationInfoSeen')) {
-				window.location.href = `${this.baseUrl}standorte#locationMap`;
+				window.location.href = `${this.baseUrl}#/standorte#locationMap`;
 			} else {
 				// this.scroller.scrollToPosition([0,0]);
 				// this.router.navigate(['/standorte']);
-				window.location.href = `${this.baseUrl}standorte`;
+				window.location.href = `${this.baseUrl}#/standorte`;
 			}
 		} else {
-			window.location.href = `${this.baseUrl}standorte#locationMap`;
+			window.location.href = `${this.baseUrl}#/standorte#locationMap`;
 		}
 	}
 }

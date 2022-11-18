@@ -20,7 +20,7 @@ export class UnternehmenComponent implements OnInit, AfterViewInit {
 		private activatedRoute: ActivatedRoute,
 		private csvService: CsvService,
 		private translate: TranslateService
-	) { 
+	) {
 		this.currentLanguage = this.translate.currentLang;
 		translate.onLangChange.subscribe((event: LangChangeEvent) => {
             this.currentLanguage = event.lang;
@@ -46,10 +46,10 @@ export class UnternehmenComponent implements OnInit, AfterViewInit {
 	}
 
 	ngAfterViewInit() {
-		this.activatedRoute.queryParams.subscribe(params => {
-            if (params['goToSection']) {
-				this.scroller.scrollToAnchor(params['goToSection']);
-            }
-        });
+		// this.activatedRoute.queryParams.subscribe(params => {
+        //     if (params['goToSection']) {
+		// 		this.scroller.scrollToAnchor(params['goToSection']);
+        //     }
+        // });
 	}
 }

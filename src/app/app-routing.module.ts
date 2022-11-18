@@ -4,7 +4,6 @@ import { DienstleistungenComponent } from './dienstleistungen/dienstleistungen.c
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { KarriereComponent } from './karriere/karriere.component';
-import { NichtGefundenComponent } from './nicht-gefunden/nicht-gefunden.component';
 import { StandorteComponent } from './standorte/standorte.component';
 import { TransportunternehmerComponent } from './transportunternehmer/transportunternehmer.component';
 import { UnternehmenComponent } from './unternehmen/unternehmen.component';
@@ -49,15 +48,15 @@ const routes: Routes = [
 		component: DatenschutzComponent,
 		data: {}
 	},
-	{
-		path: '',
-		pathMatch: 'prefix', //default
-		redirectTo: 'home'
-	},
-	{
-		path: '**',
-		component: NichtGefundenComponent
-	},
+	// {
+	// 	path: '',
+	// 	pathMatch: 'prefix', //default
+	// 	redirectTo: 'home'
+	// },
+	// {
+	// 	path: '**',
+	// 	component: NichtGefundenComponent
+	// },
 ];
 
 export const AppRoutingModule = RouterModule.forRoot(routes, {anchorScrolling: 'enabled', scrollPositionRestoration: 'disabled'});

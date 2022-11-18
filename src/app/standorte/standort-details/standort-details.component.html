@@ -145,12 +145,12 @@
 		<tr class="table__row--tablet" *ngFor="let row of personelList">
 			<td>{{('locations.department.' + row.department.trim()) | translate }}</td>
 			<td>
-				<div *ngFor="let name of row.name" class="mb-5">{{('locations.' + name.gender) | translate}}
-					{{name.firstnameAndLastname}}</div>
+				<div *ngFor="let name of row.name" class="mb-5">
+					{{('locations.' + name.gender) | translate}} {{name.firstnameAndLastname}}
+				</div>
 			</td>
 			<td>
-				<div *ngFor="let phoneSuffix of row.phoneSuffix" class="mb-5"><a [href]="'tel:' + row.phone">{{
-						phoneSuffix }}</a></div>
+				<div *ngFor="let phoneSuffix of row.phoneSuffix" class="mb-5"><a [href]="'tel:' + row.phone">{{ phoneSuffix }}</a></div>
 			</td>
 			<td>
 				<div *ngFor="let email of row.email" class="mb-5"><a [href]="'mailto:' + email">{{ email }}</a></div>
@@ -159,9 +159,11 @@
 
 		<tr class="table__row--mobile" *ngFor="let row of personelList">
 			<td class="column">
-				<h4>{{row.department}}</h4>
+				<h4>{{('locations.department.' + row.department.trim()) | translate }}</h4>
 				<div *ngFor="let name of row.name; let i=index" class="column mb-10">
-					<span class="mb-5">{{name}} </span>
+					<span class="mb-5">
+						{{('locations.' + name.gender) | translate}} {{name.firstnameAndLastname}}
+					</span>
 					<span class="mb-5">
 						{{'locations.phone' | translate}}:&nbsp;
 						<a [href]="'tel:' + row?.phone[i]">{{ row?.phone[i] }}</a>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { SharedService } from 'src/app/shared/shared.service';
 
@@ -33,9 +33,12 @@ export class AppComponent {
 		// Set used language
 		translate.use(this.sharedService.currLang);
 		// decide what to do when this event is triggered.
-		router.events.subscribe(() => {
-			const currUrl: string = window.location.href.split('/#/')[1];
-			this.activeTab = (currUrl?.split('/').pop() !== undefined) ? currUrl.split('/').pop() : 'unternehmen';
+		router.events.subscribe(event => {
+			if (event instanceof NavigationEnd) {
+				let currUrl = window.location.href.split('/').pop();
+				currUrl = (currUrl?.includes('#')) ? currUrl.split('#')[0] : currUrl;
+				this.activeTab = currUrl ? currUrl : 'unternehmen';
+			}
 		});
 	}
 
