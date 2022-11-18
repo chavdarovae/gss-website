@@ -34,7 +34,7 @@ export class AppComponent {
 		translate.use(this.sharedService.currLang);
 		// decide what to do when this event is triggered.
 		router.events.subscribe(() => {
-			const currUrl: string = window.location.href.split('#')[0];
+			const currUrl: string = window.location.href.split('/#/')[1];
 			this.activeTab = (currUrl?.split('/').pop() !== undefined) ? currUrl.split('/').pop() : 'unternehmen';
 		});
 	}
