@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, Input, isDevMode, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, isDevMode, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SharedService } from 'src/app/shared/shared.service';
 import { WindowScrollingService } from 'src/app/shared/window-scrolling.service';
@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements OnInit {
 	@Input() activeTab: any = 'unternehmen';
 	@Input() pageTitle = 'company';
 	public get mobileSuffix(): string {
@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
 	imgPrefix = isDevMode() ? '../../../assets/img/' : './assets/img/';
 	baseUrl = environment.urlNeufra;
-	showWellcomeMessage = true;
 
 	@ViewChild('wellcomeMessage') wellcomeMessage: ElementRef;
 
@@ -27,25 +26,15 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 		private translate: TranslateService,
 		private scroller: ViewportScroller,
 		public sharedService: SharedService,
-		private renderer: Renderer2,
 		private windowScrollingService: WindowScrollingService
 	) {}
 
 	ngOnInit(): void {
 	}
 
-	ngAfterViewInit(): void {
-		// this.renderer.listen('window', 'touchstart', (e: Event) => {
-		// 	if (this.showWellcomeMessage && this.wellcomeMessage.nativeElement.contains(e.target)) {
-		// 		this.showWellcomeMessage = false;
-		// 		this.showDetails();
-		// 	}
-		// });
-	}
-
 	showDetails() {
 		this.windowScrollingService.disableFreeze();
-		this.showWellcomeMessage = false;
+		this.sharedService.showWellcomeMessage = false;
 		this.scroller.scrollToPosition([0, document.documentElement.clientHeight])
 	}
 
@@ -55,7 +44,6 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
 	showMap() {
 		sessionStorage.setItem('setLocationInfoSeen', 'true')
-		// this.windowScrollingService.disableFreeze();
 	}
 
 	isInfoSeenForCurrentSession() {

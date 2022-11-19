@@ -11,6 +11,7 @@ export class SharedService {
 	currLang: string = (sessionStorage.getItem('Nuefra-lang') ? sessionStorage.getItem('Nuefra-lang') : 'de') as string;
 	private currLangSubject = new BehaviorSubject<string>(this.currLang);
 	currLang$ = this.currLangSubject.asObservable();
+	showWellcomeMessage = true;
 
 	constructor() {
 	}

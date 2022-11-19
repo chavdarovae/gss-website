@@ -1,5 +1,4 @@
-import { ViewportScroller } from '@angular/common';
-import { AfterViewInit, Component, isDevMode, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { SharedService } from '../shared/shared.service';
 import { WindowScrollingService } from '../shared/window-scrolling.service';
@@ -9,23 +8,18 @@ import { WindowScrollingService } from '../shared/window-scrolling.service';
 	templateUrl: './home.component.html',
 	styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
-	urlPrefix = isDevMode() ? '../../' : './';
+export class HomeComponent implements OnInit {
+	urlPrefix = environment.urlPrefix;
 	baseUrl = environment.urlNeufra;
 
 	constructor(
-		private scroller: ViewportScroller,
 		private windowScrollingService: WindowScrollingService,
-		private sharedService: SharedService
+		private sharedService: SharedService,
 	) {}
 
 	ngOnInit(): void {
-		if(this.sharedService.isMobileDevice()) {
+		if(this.sharedService.isMobileDevice() && this.sharedService.showWellcomeMessage) {
 			this.windowScrollingService.enableFreeze();
 		}
-	}
-
-	ngAfterViewInit(): void {
-		this.scroller.scrollToPosition([0,0])
 	}
 }

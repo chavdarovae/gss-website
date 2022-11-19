@@ -68,7 +68,7 @@
             <img class="poster__img-pic" [src]="imgPrefix + 'poster-' + activeTab + mobileSuffix + '.jpg'"
                 alt="Poster photo">
         </div>
-        <div #wellcomeMessage *ngIf="activeTab === 'home' && showWellcomeMessage"
+        <div #wellcomeMessage *ngIf="activeTab === 'home' && sharedService.showWellcomeMessage"
             class="poster__img-title--home show-on-mobile">
             <h1>{{'header.home' | translate}}</h1>
             <h4>{{'header.home-subtitle' | translate}}</h4>

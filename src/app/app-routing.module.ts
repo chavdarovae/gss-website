@@ -48,15 +48,15 @@ const routes: Routes = [
 		component: DatenschutzComponent,
 		data: {}
 	},
-	// {
-	// 	path: '',
-	// 	pathMatch: 'prefix', //default
-	// 	redirectTo: 'home'
-	// },
+	{
+		path: '',
+		pathMatch: 'prefix', //default
+		redirectTo: 'home'
+	},
 	// {
 	// 	path: '**',
 	// 	component: NichtGefundenComponent
 	// },
 ];
 
-export const AppRoutingModule = RouterModule.forRoot(routes, {anchorScrolling: 'enabled', scrollPositionRestoration: 'disabled'});
+export const AppRoutingModule = RouterModule.forRoot(routes, {anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'});

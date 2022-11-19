@@ -1,4 +1,4 @@
-import { Component, isDevMode } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-impressum',
@@ -6,7 +6,6 @@ import { Component, isDevMode } from '@angular/core';
   styleUrls: ['./impressum.component.scss']
 })
 export class ImpressumComponent {
-  urlPrefix = isDevMode() ? '../../../' : './';
 
   constructor() { }
 

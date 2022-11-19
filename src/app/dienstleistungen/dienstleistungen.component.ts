@@ -1,4 +1,5 @@
-import { Component, isDevMode } from '@angular/core';
+import { Component } from '@angular/core';
+import { environment } from './../../environments/environment';
 
 @Component({
   selector: 'app-dienstleistungen',
@@ -6,7 +7,7 @@ import { Component, isDevMode } from '@angular/core';
   styleUrls: ['./dienstleistungen.component.scss']
 })
 export class DienstleistungenComponent {
-  urlPrefix = isDevMode() ? '../../' : './';
+  urlPrefix = environment.urlPrefix;
 
   constructor() { }
 

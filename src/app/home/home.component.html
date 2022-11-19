@@ -3,49 +3,49 @@
     <h2 class="title" id="reasons" translate="home.reasons"></h2>
     <section  class="card-holder">
         <!-- Über 40 Jahre Speditionserfahrung -->
-        <a [href]="baseUrl + '#/unternehmen#speditionserfahrung'" class="card">
+        <a [routerLink]="['/unternehmen']" fragment="speditionserfahrung" class="card">
             <div class="card__svg card__svg--hexgonal">
                 <img [src]="urlPrefix + 'assets/icons/medal.svg'"/>
             </div>
             <h4 class="card__title" translate="company.expericence.title"></h4>
         </a>
         <!-- Partner -->
-        <a [href]="baseUrl + '#/unternehmen#partner'" class="card">
+        <a [routerLink]="['/unternehmen']" fragment="partner" class="card">
             <div class="card__svg card__svg--hexgonal">
                 <img [src]="urlPrefix + 'assets/icons/handshake.svg'"/>
             </div>
             <h4 class="card__title" translate="company.partner.title"></h4>
         </a>
         <!-- Hand -->
-        <a [href]="baseUrl + '#/unternehmen#hand'" class="card">
+        <a [routerLink]="['/unternehmen']" fragment="hand" class="card">
             <div class="card__svg card__svg--hexgonal">
                 <img [src]="urlPrefix + 'assets/icons/globe.svg'"/>
             </div>
             <h4 class="card__title" translate="company.sustainable.title"></h4>
         </a>
         <!-- Spezialist in LKW-Verkehren -->
-        <a [href]="baseUrl + '#/unternehmen#spezialist'" class="card">
+        <a [routerLink]="['/unternehmen']" fragment="spezialist" class="card">
             <div class="card__svg card__svg--hexgonal">
                 <img [src]="urlPrefix + 'assets/icons/lorry.svg'"/>
             </div>
             <h4 class="card__title" translate="company.specialty.title"></h4>
         </a>
         <!-- Direkttransport ohne Umladung -->
-        <a [href]="baseUrl + '#/unternehmen#direkttransport'" class="card">
+        <a [routerLink]="['/unternehmen']" fragment="direkttransport" class="card">
             <div class="card__svg card__svg--hexgonal">
                 <img [src]="urlPrefix + 'assets/icons/route.svg'"/>
             </div>
             <h4 class="card__title" translate="company.direct-transportation.title"></h4>
         </a>
         <!-- Auf Wunsch Sendungsverfolgung -->
-        <a [href]="baseUrl + '#/unternehmen#sendungsverfolgung'" class="card">
+        <a [routerLink]="['/unternehmen']" fragment="sendungsverfolgung" class="card">
             <div class="card__svg card__svg--hexgonal">
                 <img [src]="urlPrefix + 'assets/icons/tracking.svg'"/>
             </div>
             <h4 class="card__title" translate="company.shipment-tracking.title"></h4>
         </a>
         <!-- Partner für eine digitale Zukunft -->
-        <a [href]="baseUrl + '#/unternehmen#digital'" class="card">
+		<a [routerLink]="['/unternehmen']" fragment="digital" class="card">
             <div class="card__svg card__svg--hexgonal">
                 <img [src]="urlPrefix + 'assets/icons/network.svg'"/>
             </div>

@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable, isDevMode } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Language } from '../model/data.model';
+import { environment } from './../../environments/environment.prod';
 
 @Injectable({
 	providedIn: 'root'
 })
 export class CsvService {
-	urlPrefix = isDevMode() ? '../../' : './';
+	urlPrefix = environment.urlPrefix;
 
 	constructor(private http: HttpClient) { }
 

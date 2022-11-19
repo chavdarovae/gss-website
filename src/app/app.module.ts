@@ -1,4 +1,3 @@
-import { AgmCoreModule } from '@agm/core';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
@@ -61,9 +60,6 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
 				useFactory: httpTranslateLoaderFactory,
 				deps: [HttpClient]
 			}
-		}),
-		AgmCoreModule.forRoot({
-			apiKey: 'AIzaSyB-jVX7UdfSbG-2ikeioqnuCKhV02KQm6A'
 		}),
 		MatDialogModule,
 		MatTabsModule,

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlNeufra: 'http://localhost:4200/'
+	urlNeufra: 'http://localhost:4200/',
+	urlPrefix: '../../'
 };
 
 /*

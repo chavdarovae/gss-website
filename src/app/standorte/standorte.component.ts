@@ -1,5 +1,5 @@
-import { ViewportScroller } from '@angular/common';
-import { AfterViewInit, Component, ElementRef, isDevMode, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { AfterViewChecked, AfterViewInit, Component, ElementRef, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
@@ -7,6 +7,7 @@ import { CsvService } from '../shared/csv.service';
 import { ScriptService } from '../shared/script.service';
 import { SharedService } from '../shared/shared.service';
 import { WindowScrollingService } from '../shared/window-scrolling.service';
+import { environment } from './../../environments/environment';
 import { StandortDetailsComponent } from './standort-details/standort-details.component';
 declare let locations: any;
 declare let inputData: any;
@@ -16,11 +17,12 @@ declare let inputCode: any;
 	templateUrl: './standorte.component.html',
 	styleUrls: ['./standorte.component.scss']
 })
-export class StandorteComponent implements OnInit, AfterViewInit {
-	urlPrefix = isDevMode() ? '../../' : './';
+export class StandorteComponent implements OnInit, AfterViewInit, AfterViewChecked {
+	urlPrefix = environment.urlPrefix;
 	isMapActive = false;
 	infoSeen = false;
 	@ViewChild('mapContainer') mapContainer: ElementRef;
+	anchor: string;
 
 	constructor(
 		private matDialog: MatDialog,
@@ -29,9 +31,9 @@ export class StandorteComponent implements OnInit, AfterViewInit {
 		private csvService: CsvService,
 		private translate: TranslateService,
 		private windowScrollingService: WindowScrollingService,
-		private scroller: ViewportScroller,
 		private activatedRoute: ActivatedRoute,
-		private sharedService: SharedService
+		private sharedService: SharedService,
+		@Inject(DOCUMENT) private document: Document
 	) {
 		translate.onLangChange.subscribe((event: LangChangeEvent) => {
 			this.loadMap();
@@ -42,9 +44,7 @@ export class StandorteComponent implements OnInit, AfterViewInit {
 		this.loadMap();
 		this.infoSeen = !!sessionStorage.getItem('setLocationInfoSeen');
 		this.activatedRoute.fragment.subscribe(fragment => {
-			if (!fragment) {
-				this.scroller.scrollToPosition([0,0]);
-			}
+			this.anchor = fragment ? fragment : '';
 		});
 	}
 
@@ -57,6 +57,12 @@ export class StandorteComponent implements OnInit, AfterViewInit {
 		});
 		if(this.sharedService.isMobileDevice() && !sessionStorage.getItem('setLocationInfoSeen')) {
 			this.windowScrollingService.enableFreeze();
+		}
+	}
+
+	ngAfterViewChecked(): void {
+		if(this.anchor) {
+			this.document.querySelector('#' + this.anchor)?.scrollIntoView({behavior: 'smooth'});
 		}
 	}
 
@@ -85,14 +91,12 @@ export class StandorteComponent implements OnInit, AfterViewInit {
 	}
 
 	showLocationDetails(location: any) {
-		// this.windowScrollingService.disable();
 		const dialogRef = this.matDialog.open(StandortDetailsComponent, {
 			data: { location: location },
 			panelClass: 'dialog'
 		});
 
 		dialogRef.afterClosed().subscribe(() => {
-			// this.windowScrollingService.enable();
 		});
 	}
 }
