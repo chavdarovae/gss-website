@@ -33,7 +33,9 @@
             },
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/robots.txt",
+              "src/sitemap.xml"
             ],
             "styles": [
               "src/assets/image-map-pro/css/image-map-pro.min.css",

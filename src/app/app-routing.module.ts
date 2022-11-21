@@ -59,4 +59,9 @@ const routes: Routes = [
 	// },
 ];
 
-export const AppRoutingModule = RouterModule.forRoot(routes, {anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'});
+export const AppRoutingModule = RouterModule.forRoot(routes, {
+	anchorScrolling: 'enabled',
+	scrollPositionRestoration: 'enabled',
+	useHash: false,
+	enableTracing: false
+});
