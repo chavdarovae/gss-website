@@ -38,10 +38,6 @@ export class HeaderComponent implements OnInit {
 		this.scroller.scrollToPosition([0, document.documentElement.clientHeight])
 	}
 
-	scrollToTop() {
-		this.scroller.scrollToPosition([0, 0]);
-	}
-
 	showMap() {
 		sessionStorage.setItem('setLocationInfoSeen', 'true')
 	}
