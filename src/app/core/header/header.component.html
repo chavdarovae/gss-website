@@ -77,7 +77,7 @@
         <div *ngIf="activeTab === 'standorte' && !isInfoSeenForCurrentSession()"
             class="poster__img-title--home show-on-mobile">
             <p>{{'locations.info' | translate}}</p>
-            <a [href]="baseUrl + 'standorte#locationMap'">
+            <a [routerLink]="['/standorte']" fragment="locationMap">
                 <i class="fa fa-angle-down animation-bounce" (click)="showMap()"></i>
             </a>
         </div>

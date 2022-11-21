@@ -217,8 +217,13 @@ body {
 		left: 50%;
         background-color: #FFFFFF;
 		border-radius: 50%;
-        width: 5px;
-        height: 5px;
+        width: 2px;
+        height: 2px;
         transform: translate(-56%, -56%);
+
+		@include for-desktop-up {
+			width: 5px;
+			height: 5px;
+        }
     }
 }
