@@ -1,0 +1,6 @@
+User-agent: *
+User-agent: AdsBot-Google
+Disallow: /assets/
+Allow: /
+
+Sitemap: http://www.neufra.eu/sitemap.xml
