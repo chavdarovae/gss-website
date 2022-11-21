@@ -1,5 +1,5 @@
 import { Component, Inject, isDevMode, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
 import { BranchInfo, PersonelInfo } from 'src/app/model/data.model';
 import { CsvService } from 'src/app/shared/csv.service';
 import { ADDITIONAL_DATA } from 'src/assets/files/additional-data';
