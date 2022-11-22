@@ -14,7 +14,7 @@ export class HeaderComponent {
 	@Input() activeTab: any = 'unternehmen';
 	@Input() pageTitle = 'company';
 	public get mobileSuffix(): string {
-		return this.activeTab === 'karriere' && this.sharedService.isMobileDevice() ? '-mobile' : '';
+		return this.sharedService.isMobileDevice() ? '-mobile' : '';
 	}
 
 	imgPrefix = environment.urlPrefixCore + 'assets/img/';
