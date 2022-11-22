@@ -69,17 +69,21 @@
             <img class="poster__img-pic" [src]="imgPrefix + 'poster-' + activeTab + mobileSuffix + '.jpg'"
                 alt="Poster photo">
         </div>
-        <div #wellcomeMessage *ngIf="activeTab === 'home' && sharedService.showWellcomeMessage"
+
+		<!-- wellcome message  -->
+        <div *ngIf="activeTab === 'home' && sharedService.showWellcomeMessage"
             class="poster__img-title--home show-on-mobile">
             <h1>{{'header.home' | translate}}</h1>
             <h4>{{'header.home-subtitle' | translate}}</h4>
             <i class="fa fa-angle-down animation-bounce" (click)="showDetails()"></i>
         </div>
-        <div *ngIf="activeTab === 'standorte' && !isInfoSeenForCurrentSession()"
+
+		<!-- location info  -->
+        <div *ngIf="activeTab === 'standorte' && sharedService.showLocationInfo"
             class="poster__img-title--home show-on-mobile">
             <p>{{'locations.info' | translate}}</p>
             <a [routerLink]="['/standorte']" fragment="locationMap">
-                <i class="fa fa-angle-down animation-bounce" (click)="showMap()"></i>
+                <i class="fa fa-angle-down animation-bounce" (click)="hideLocationInfo()"></i>
             </a>
         </div>
     </div>

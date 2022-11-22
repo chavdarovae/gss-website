@@ -1,23 +1,18 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
-@Injectable({
-	providedIn: 'root'
-})
+@Injectable()
 export class SharedService {
-	private infoSeen$ = new BehaviorSubject<boolean>(false);
-	locationInfoSeen$ = this.infoSeen$.asObservable();
 
 	currLang: string = (sessionStorage.getItem('Nuefra-lang') ? sessionStorage.getItem('Nuefra-lang') : 'de') as string;
 	private currLangSubject = new BehaviorSubject<string>(this.currLang);
 	currLang$ = this.currLangSubject.asObservable();
+
+	// flags
 	showWellcomeMessage = true;
+	showLocationInfo = true;
 
 	constructor() {
-	}
-
-	setLocationInfoSeen(val: boolean) {
-		this.infoSeen$.next(val);
 	}
 
 	isMobileDevice(): boolean {

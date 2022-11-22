@@ -24,10 +24,16 @@ export class StandortDetailsComponent implements OnInit {
 	showAdditionalData = false;
 	additonalData: { management: string[], court?: string, headquarters?: string, taxNumber?: string, vtaNumber?: string, companyRegistrationNumber?: string, text?: string[] };
 
+	captcha: string;
+	email: string;
+
 	constructor(
 		@Inject(MAT_DIALOG_DATA) public data: { location: string },
 		private csvService: CsvService
-	) { }
+	) {
+		this.captcha = '';
+		this.email = 'neuss@neufra.eu';
+	}
 
 	ngOnInit(): void {
 		this.getLocationDetails();
@@ -131,4 +137,9 @@ export class StandortDetailsComponent implements OnInit {
 		const number = numberStr.split(' ').join('').split('-').join('');
 		return number.replace(/(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/g, "$1 $2 $3 - $4 $5 - ");
 	}
+
+	resolved(captchaResponse: string) {
+        this.captcha = captchaResponse;
+        console.log('resolved captcha with response: ' + this.captcha);
+    }
 }

@@ -10,7 +10,6 @@ import { WindowScrollingService } from '../shared/window-scrolling.service';
 })
 export class HomeComponent implements OnInit {
 	urlPrefix = environment.urlPrefix;
-	baseUrl = environment.urlNeufra;
 
 	constructor(
 		private windowScrollingService: WindowScrollingService,

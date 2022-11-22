@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { AfterViewChecked, AfterViewInit, Component, ElementRef, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
@@ -17,9 +17,8 @@ declare let inputCode: any;
 	templateUrl: './standorte.component.html',
 	styleUrls: ['./standorte.component.scss']
 })
-export class StandorteComponent implements OnInit, AfterViewInit, AfterViewChecked {
+export class StandorteComponent implements OnInit, AfterViewChecked {
 	urlPrefix = environment.urlPrefix;
-	isMapActive = false;
 	infoSeen = false;
 	@ViewChild('mapContainer') mapContainer: ElementRef;
 	anchor: string;
@@ -42,27 +41,21 @@ export class StandorteComponent implements OnInit, AfterViewInit, AfterViewCheck
 
 	ngOnInit(): void {
 		this.loadMap();
-		this.infoSeen = !!sessionStorage.getItem('setLocationInfoSeen');
+
 		this.activatedRoute.fragment.subscribe(fragment => {
 			this.anchor = fragment ? fragment : '';
 		});
-	}
 
-	ngAfterViewInit(): void {
-		this.renderer.listen('window', 'touchstart', (e: Event) => {
-			if (this.mapContainer.nativeElement.contains(e.target)) {
-				this.infoSeen = true;
-				this.windowScrollingService.disableFreeze();
-			}
-		});
-		if(this.sharedService.isMobileDevice() && !sessionStorage.getItem('setLocationInfoSeen')) {
+		if (this.sharedService.isMobileDevice() && this.sharedService.showLocationInfo) {
+			console.log('enable');
+
 			this.windowScrollingService.enableFreeze();
 		}
 	}
 
 	ngAfterViewChecked(): void {
 		if(this.anchor) {
-			this.document.querySelector('#' + this.anchor)?.scrollIntoView({behavior: 'smooth'});
+			this.document.querySelector('#' + this.anchor)?.scrollIntoView({ behavior: 'smooth' });
 		}
 	}
 
@@ -94,9 +87,6 @@ export class StandorteComponent implements OnInit, AfterViewInit, AfterViewCheck
 		const dialogRef = this.matDialog.open(StandortDetailsComponent, {
 			data: { location: location },
 			panelClass: 'dialog'
-		});
-
-		dialogRef.afterClosed().subscribe(() => {
 		});
 	}
 }

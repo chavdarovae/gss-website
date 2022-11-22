@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { SharedService } from '../shared/shared.service';
@@ -8,27 +8,19 @@ import { SharedService } from '../shared/shared.service';
 	templateUrl: './transportunternehmer.component.html',
 	styleUrls: ['./transportunternehmer.component.scss']
 })
-export class TransportunternehmerComponent implements OnInit {
+export class TransportunternehmerComponent {
 	urlPrefix = environment.urlPrefix;
-	baseUrl = environment.urlNeufra;
 
 	constructor(
 		private router: Router,
 		private sharedService: SharedService
-		) { }
-
-	ngOnInit(): void {
-	}
+	) { }
 
 	goTo() {
-		if(this.sharedService.isMobileDevice()) {
-			if (!!sessionStorage.getItem('setLocationInfoSeen')) {
-				this.router.navigate(['/standorte'], { fragment: 'locationMap' });
-			} else {
-				this.router.navigate(['/standorte']);
-			}
-		} else {
+		if (this.sharedService.isMobileDevice() && !this.sharedService.showLocationInfo) {
 			this.router.navigate(['/standorte'], { fragment: 'locationMap' });
+		} else {
+			this.router.navigate(['/standorte']);
 		}
 	}
 }

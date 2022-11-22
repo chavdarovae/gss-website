@@ -8,9 +8,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { RecaptchaModule } from 'ng-recaptcha';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
+import { FooterComponent } from './core/footer/footer.component';
+import { HeaderComponent } from './core/header/header.component';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 import { DienstleistungenComponent } from './dienstleistungen/dienstleistungen.component';
 import { HomeComponent } from './home/home.component';
@@ -35,6 +37,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
 @NgModule({
 	declarations: [
 		AppComponent,
+		HeaderComponent,
+    	FooterComponent,
 		UnternehmenComponent,
 		StandorteComponent,
 		DienstleistungenComponent,
@@ -51,7 +55,6 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
 		BrowserModule,
 		BrowserAnimationsModule,
 		AppRoutingModule,
-		CoreModule,
 		HttpClientModule,
 		TranslateModule.forRoot({
 			defaultLanguage: 'de',
@@ -63,7 +66,8 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
 		}),
 		MatDialogModule,
 		MatTabsModule,
-		MatTableModule
+		MatTableModule,
+		RecaptchaModule
 	],
 	providers: [
 		SharedService,

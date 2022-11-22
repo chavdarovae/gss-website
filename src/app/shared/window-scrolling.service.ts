@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-	providedIn: 'root'
-})
+@Injectable()
 export class WindowScrollingService {
 	private styleTag: HTMLStyleElement;
 	private freezeStyleTag: HTMLStyleElement;
@@ -35,7 +33,7 @@ export class WindowScrollingService {
 	public enableFreeze() {
 		document.body.appendChild(this.freezeStyleTag);
 	}
-	
+
 	public disableFreeze() {
 		if(getComputedStyle(document.body).touchAction === 'pan-x') {
 			document.body.removeChild(this.freezeStyleTag);

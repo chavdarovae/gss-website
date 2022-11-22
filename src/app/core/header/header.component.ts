@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { Component, ElementRef, Input, isDevMode, OnInit, ViewChild } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SharedService } from 'src/app/shared/shared.service';
 import { WindowScrollingService } from 'src/app/shared/window-scrolling.service';
@@ -10,17 +10,15 @@ import { environment } from 'src/environments/environment';
 	templateUrl: './header.component.html',
 	styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 	@Input() activeTab: any = 'unternehmen';
 	@Input() pageTitle = 'company';
 	public get mobileSuffix(): string {
 		return this.activeTab === 'karriere' && this.sharedService.isMobileDevice() ? '-mobile' : '';
 	}
 
-	imgPrefix = isDevMode() ? '../../../assets/img/' : './assets/img/';
+	imgPrefix = environment.urlPrefixCore + 'assets/img/';
 	baseUrl = environment.urlNeufra;
-
-	@ViewChild('wellcomeMessage') wellcomeMessage: ElementRef;
 
 	constructor(
 		private translate: TranslateService,
@@ -29,25 +27,21 @@ export class HeaderComponent implements OnInit {
 		private windowScrollingService: WindowScrollingService
 	) {}
 
-	ngOnInit(): void {
-	}
-
 	showDetails() {
-		this.windowScrollingService.disableFreeze();
 		this.sharedService.showWellcomeMessage = false;
+		this.disableFreeze();
 		this.scroller.scrollToPosition([0, document.documentElement.clientHeight])
 	}
 
-	showMap() {
-		sessionStorage.setItem('setLocationInfoSeen', 'true')
+	disableFreeze() {
+		if(this.sharedService.isMobileDevice()) {
+			this.windowScrollingService.disableFreeze();
+		}
 	}
 
-	isInfoSeenForCurrentSession() {
-		return !!sessionStorage.getItem('setLocationInfoSeen');
-	}
-
-	disableFreeze(){
-		this.windowScrollingService.disableFreeze();
+	hideLocationInfo() {
+		this.sharedService.showLocationInfo = false;
+		this.disableFreeze();
 	}
 
 	//Switch language

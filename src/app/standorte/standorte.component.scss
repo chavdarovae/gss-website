@@ -11,15 +11,6 @@
     z-index: 4;
     // touch-action: pan-y;
 
-    &.active {
-        // z-index: 4;
-        // border: 1px solid red;
-    }
-
-    .map {
-        // touch-action: pinch-zoom;
-    }
-
 
     @include for-tablet-portrait-up {
         height: 500px;
