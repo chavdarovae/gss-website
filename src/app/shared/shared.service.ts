@@ -4,13 +4,15 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable()
 export class SharedService {
 
-	currLang: string = (sessionStorage.getItem('Nuefra-lang') ? sessionStorage.getItem('Nuefra-lang') : 'de') as string;
+	currLang: string = (sessionStorage.getItem('Neufra-lang') ? sessionStorage.getItem('Neufra-lang') : 'de') as string;
 	private currLangSubject = new BehaviorSubject<string>(this.currLang);
 	currLang$ = this.currLangSubject.asObservable();
 
 	// flags
 	showWellcomeMessage = true;
-	showLocationInfo = true;
+	get infoSeen() {
+		return !!sessionStorage.getItem('Neufra-info-seen');
+	}
 
 	constructor() {
 	}

@@ -17,10 +17,10 @@ export class TransportunternehmerComponent {
 	) { }
 
 	goTo() {
-		if (this.sharedService.isMobileDevice() && !this.sharedService.showLocationInfo) {
-			this.router.navigate(['/standorte'], { fragment: 'locationMap' });
-		} else {
+		if (this.sharedService.isMobileDevice() && !this.sharedService.infoSeen) {
 			this.router.navigate(['/standorte']);
+		} else {
+			this.router.navigate(['/standorte'], { fragment: 'locationMap' });
 		}
 	}
 }

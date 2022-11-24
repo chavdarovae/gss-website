@@ -71,12 +71,11 @@
         <h2 translate="company.documents.title"></h2>
         <div class="document-holder">
             <article class="document" *ngFor="let document of docuList">
-                <i class="fa-regular fa-file-pdf"></i>
+				<i class="far fa-file-pdf"></i>
                 <span class="document__name">{{document[0]}}</span>
                 <span class="document__size hide-on-mobile">({{document[2]}}kB)</span>
-                <a [href]="urlPrefix + 'assets/files/documents/' + document[0] + '.' + document[1]" 
-                    [download]="document[0]">
-                    <i class="fas fa-angle-double-down show-on-mobile"></i>
+                <a [href]="urlPrefix + 'assets/files/documents/' + document[0] + '.' + document[1]" [download]="document[0]">
+					<i class="far fa-arrow-alt-circle-down show-on-mobile"></i>
                     <span class="hide-on-mobile">Download</span>
                 </a>
             </article>

@@ -79,7 +79,7 @@
         </div>
 
 		<!-- location info  -->
-        <div *ngIf="activeTab === 'standorte' && sharedService.showLocationInfo"
+        <div *ngIf="activeTab === 'standorte' && !sharedService.infoSeen"
             class="poster__img-title--home show-on-mobile">
             <p>{{'locations.info' | translate}}</p>
             <a [routerLink]="['/standorte']" fragment="locationMap">

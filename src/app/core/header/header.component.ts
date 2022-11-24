@@ -40,14 +40,14 @@ export class HeaderComponent {
 	}
 
 	hideLocationInfo() {
-		this.sharedService.showLocationInfo = false;
+		sessionStorage.setItem('Neufra-info-seen', 'true');
 		this.disableFreeze();
 	}
 
 	//Switch language
 	translateLanguageTo(lang: string) {
 		this.sharedService.setNewLanugage(lang);
-		sessionStorage.setItem('Nuefra-lang', lang);
+		sessionStorage.setItem('Neufra-lang', lang);
 		this.translate.use(lang);
 	}
 }

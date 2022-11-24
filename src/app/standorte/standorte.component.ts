@@ -1,8 +1,9 @@
 import { DOCUMENT } from '@angular/common';
-import { AfterViewChecked, Component, ElementRef, Inject, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { AfterViewChecked, Component, ElementRef, Inject, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { LangChangeEvent, TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 import { CsvService } from '../shared/csv.service';
 import { ScriptService } from '../shared/script.service';
 import { SharedService } from '../shared/shared.service';
@@ -17,11 +18,11 @@ declare let inputCode: any;
 	templateUrl: './standorte.component.html',
 	styleUrls: ['./standorte.component.scss']
 })
-export class StandorteComponent implements OnInit, AfterViewChecked {
+export class StandorteComponent implements OnInit, AfterViewChecked, OnDestroy {
 	urlPrefix = environment.urlPrefix;
-	infoSeen = false;
 	@ViewChild('mapContainer') mapContainer: ElementRef;
 	anchor: string;
+	sub: Subscription;
 
 	constructor(
 		private matDialog: MatDialog,
@@ -42,19 +43,21 @@ export class StandorteComponent implements OnInit, AfterViewChecked {
 	ngOnInit(): void {
 		this.loadMap();
 
-		this.activatedRoute.fragment.subscribe(fragment => {
+		this.sub = this.activatedRoute.fragment.subscribe(fragment => {
 			this.anchor = fragment ? fragment : '';
 		});
 
-		if (this.sharedService.isMobileDevice() && this.sharedService.showLocationInfo) {
-			console.log('enable');
-
+		if (this.sharedService.isMobileDevice() && !this.sharedService.infoSeen) {
 			this.windowScrollingService.enableFreeze();
 		}
 	}
 
+	ngOnDestroy(): void {
+		this.sub.unsubscribe();
+	}
+
 	ngAfterViewChecked(): void {
-		if(this.anchor) {
+		if (this.anchor && this.sharedService.infoSeen) {
 			this.document.querySelector('#' + this.anchor)?.scrollIntoView({ behavior: 'smooth' });
 		}
 	}
