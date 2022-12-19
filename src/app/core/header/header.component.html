@@ -14,7 +14,7 @@
                 <span class="vert-to-45right">|</span>
                 <span class="vert-to-45left">|</span>
             </li>
-			<!-- languageBar for mobile version -->
+            <!-- languageBar for mobile version -->
             <li class="menu__item menu__item--lang show-on-tablet" style="visibility:hidden">
                 <ng-container *ngTemplateOutlet="languageBar"></ng-container>
             </li>
@@ -50,7 +50,7 @@
                 <a routerLink="/impressum" class="menu__item-link" translate="footer.legalNotice"></a>
                 <a routerLink="/datenschutz" class="menu__item-link" translate="footer.dataPrivacy"></a>
             </li>
-            <li class="menu__item  hide-on-tablet" style="visibility:hidden">
+            <li class="menu__item  hide-on-tablet">
                 <ng-container *ngTemplateOutlet="languageBar"></ng-container>
             </li>
         </ul>
@@ -70,7 +70,7 @@
                 alt="Poster photo">
         </div>
 
-		<!-- wellcome message  -->
+        <!-- wellcome message  -->
         <div *ngIf="activeTab === 'home' && sharedService.showWellcomeMessage"
             class="poster__img-title--home show-on-mobile">
             <h1>{{'header.home' | translate}}</h1>
@@ -78,7 +78,7 @@
             <i class="fa fa-angle-down animation-bounce" (click)="showDetails()"></i>
         </div>
 
-		<!-- location info  -->
+        <!-- location info  -->
         <div *ngIf="activeTab === 'standorte' && !sharedService.infoSeen"
             class="poster__img-title--home show-on-mobile">
             <p>{{'locations.info' | translate}}</p>
