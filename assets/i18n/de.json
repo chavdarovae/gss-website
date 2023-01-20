@@ -4,27 +4,27 @@
     "home-subtitle": "der Versicherungsmakler an deiner Seite.",
     "company": "unternehmen",
     "locations": "standorte",
-    "services": "dienstleistungen",
+    "services": "KFZ Bereich",
     "career": "karriere",
-    "transportCompany": "transportunternehmer",
+    "transportCompany": "transportschäden",
     "legalNotice": "impressum",
     "dataPrivacy": "datenschutz"
   },
   "home": {
-    "reasons": "Sieben gute Gründe für NEUFRA"
+    "reasons": "Fünf gute Gründe für GSS Güter-Schaden-Service"
   },
   "company": {
     "expericence": {
       "title": "Über 40 Jahre Erfahrung",
-      "info": "Seit 1982 übernehmen wir Komplett- und Teilladungen, optimieren deren Zusammenstellung und distributieren die Sendungen mit ausgesuchten, überprüften Transportunternehmen zu ihrem jeweiligen Bestimmungsort."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "partner": {
       "title": "Zuverlässiger Partner",
-      "info": " Unsere Firmenphilosophie war von Anfang an, als Spediteur ausschließlich neutral für andere Speditionen tätig zu sein und sich dabei auf LKW-Verkehre zu spezialisieren."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "sustainable": {
       "title": "Leistungen aus 1. Hand",
-      "info": "Wir bringen nicht nur Ihre Sendung ans Ziel, wir kontrollieren auch alle Lademittelbewegungen und sorgen bei Lademittelschulden für eine zeitnahe Rückführung. Sollte mal ein Schaden entstehen, werden etwaige Ersatzansprüche unverzüglich bearbeitet. Bei komplizierten Schadensereignissen kooperieren wir hierbei mit unserer Tochtergesellschaft <a href='http://www.gss-gmbh.de/' target='_blank'>GSS Güter-Schaden-Service GmbH</a>."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "specialty1": {
       "title": "Spezialist für Transportschäden",
@@ -32,16 +32,16 @@
     },
     "specialty2": {
       "title": "Spezialist für den KFZ Bereich",
-      "info": "Als Spezialist sind wir besser als der Globalanbieter - zu Ihrem Vorteil. Täglich befrachten wir ca. 1.200 LKW, disponiert von 33 NEUFRA-Niederlassungen in Europa."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "history": {
       "title": "Historie",
-      "first": "Was am 01.01.1979 mit insgesamt 5 Personen begann, hat sich bis heute zu  einem international aufgestellten Speditionsdienstleister mit mehr als 400 Mitarbeiterinnen und Mitarbeitern in 33 Niederlassungen in Europa entwickelt.",
-      "second": "Schwerpunkt in den Achtzigerjahren war der Aufbau eines flächendeckenden Niederlassungsnetzes in der alten Bundesrepublik, um dem wachsenden Anspruch der Speditionskunden gerecht zu werden. Nach der politischen Wende 1989 expandierte NEUFRA-Spedition auch in die neuen Bundesländer. Parallel zum Ausbau des deutschen Niederlassungsnetzes folgte in den 90er Jahren die strategische Entscheidung, NEUFRA zu einer Spedition europäischen Zuschnitts zu entwickeln. Als Konsequenz wurden Tochtergesellschaften in Italien und Ungarn gegründet.",
-      "third": "Nach der Jahrtausendwende folgten Tochtergesellschaften in Österreich, Polen, Spanien und Tschechien. Aktuell spielt natürlich auch die Digitalisierung eine besondere Rolle. Nicht nur Verwaltungsvorgänge wurden und werden für NEUFRA und deren Geschäftspartner digital vereinfacht, auch die Entwicklung einer eigenen Webanwendung und App zum Frachtmanagement sichern die Zukunft der NEUFRA-Gruppe im digitalen Zeitalter."
+      "first": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
+	  "second": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
+	  "third": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "documents": {
-      "title": "Wichtige NEUFRA-Formulare zum Downloaden"
+      "title": "Wichtige GSS-Formulare zum Downloaden"
     }
   },
   "locations": {
@@ -353,23 +353,23 @@
   "services": {
     "national": {
       "title": "Nationale Linienverkehre",
-      "info": "Über unser dicht gespanntes Niederlassungsnetz in Deutschland realisieren wir Ihre Teil- oder Komplettladung im täglichen Linienverkehr."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "european": {
       "title": "Europaweite Transporte",
-      "info": "Ob innerhalb der Staatsgebiete unserer europäischen Nachbarn oder über deren Grenzen hinaus, wir sind der richtige Ansprechpartner."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "international": {
       "title": "Internationale Transporte",
-      "info": "Wir transportieren Ihre Güter auch außerhalb der Grenzen Europas. Unsere Experten für den Vorderen Orient finden Sie z.B. in der Niederlassung Frankfurt."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "temperatureControlled": {
       "title": "Temperaturgeführte Transporte",
-      "info": "Unsere Spezialisten für temperaturgeführte Transporte finden Sie an unserem Standort in Leipzig."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "dangerGoodss": {
       "title": "Gefahrguttransporte",
-      "info": "Selbstverständlich bringen wir nach Absprache auch Ihre Gefahrgüter zu allen Destinationen."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     }
   },
   "career": {
@@ -420,15 +420,15 @@
   "transportCompany": {
     "capacityExploitation": {
       "title": "Sie suchen eine optimale Auslastung für Ihre Fahrzeuge?",
-      "info": "Dann lassen Sie uns individuell über eine für beide Parteien maßgeschneiderte Zusammenarbeit reden. Alle Punkte werden mit Ihnen abgestimmt, von der Anzahl der Lade- und Abladestellen über das Zielgebiet bis hin zum Frachtpreis."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "cooperation": {
       "title": "Sie haben Interesse an einer partnerschaftlichen Zusammenarbeit?",
-      "info": "Unser Ziel ist eine langfristige Geschäftsbeziehung mit Planungssicherheit für beide Seiten, denn zuverlässige Geschäftspartner sind das A und O in unserer Branche."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "interest": {
       "title": "Haben wir Ihr Interesse geweckt?",
-      "info": "Dann setzen Sie sich mit uns in Verbindung; kontaktieren Sie einfach die Ihnen nächstgelegene Niederlassung."
+      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "toOurLocations": "Zu unseren Standorten"
   },
