@@ -1,5 +1,5 @@
 {
-  "name": "neufra.eu",
+  "name": "gss.eu",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:prod": "ng build --configuration production",
-    "build:prod-github": "ng build --configuration production --base-href https://neufrait.github.io/neufra.eu/",
-    "deploy": "ngh --dir dist/neufra.eu"
+    "build:prod-github": "ng build --configuration production --base-href https://neufrait.github.io/gss-website/",
+    "deploy": "ngh --dir dist/gss.eu"
   },
   "private": true,
   "dependencies": {

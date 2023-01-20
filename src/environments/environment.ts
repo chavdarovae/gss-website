@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-	urlNeufra: 'http://localhost:4200/',
+	urlGss: 'http://localhost:4200/',
 	urlPrefix: '../../',
 	urlPrefixCore: '../../../'
 };

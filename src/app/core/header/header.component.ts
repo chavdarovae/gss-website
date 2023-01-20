@@ -18,7 +18,7 @@ export class HeaderComponent {
 	}
 
 	imgPrefix = environment.urlPrefixCore + 'assets/img/';
-	baseUrl = environment.urlNeufra;
+	baseUrl = environment.urlGss;
 
 	constructor(
 		private translate: TranslateService,

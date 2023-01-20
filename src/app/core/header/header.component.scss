@@ -40,7 +40,7 @@
 
         @include for-desktop-up {
             position: absolute;
-            top: 10px;
+            top: 5px;
             left: 0;
             z-index: 2;
         }
@@ -156,5 +156,33 @@ select.lang-bar {
         background-image: linear-gradient(45deg, transparent 50%, $nav-text-color 50%), linear-gradient(135deg, $nav-text-color 50%, transparent 50%);
         background-position: calc(100% - 20px) calc(0.8em), calc(100% - 15px) calc(0.8em), calc(100% - 2.5em) 0.5em;
         background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    }
+}
+
+.logo {
+    position: relative;
+    box-shadow: $primary-shadow;
+
+    &__img {
+        width: 60px;
+        height: auto;
+        // box-shadow: $primary-shadow;
+
+        @include for-tablet-portrait-up {
+            width: $header-height-tablet-portrait;
+        }
+
+        @include for-tablet-landscape-up {
+            width: $header-height-tablet-landscape;
+        }
+
+        @include for-desktop-up {
+            width: 200px;
+        }
+    }
+
+    @include for-desktop-up {
+        // padding: 15px;
+        background-color: $body-bg;
     }
 }
