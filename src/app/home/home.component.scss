@@ -8,6 +8,8 @@
 .card-holder {
 	display: flex;
 	flex-flow: column nowrap;
+	max-width: 900px;
+	margin: auto;
 
 	@include for-tablet-portrait-up {
 		flex-flow: row wrap;

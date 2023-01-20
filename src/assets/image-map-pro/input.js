@@ -2475,13 +2475,13 @@ const inputData = {
     "width_image_background": 14.285,
     "height_image_background": 15.654,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -2610,13 +2610,13 @@ const inputData = {
     "width_image_background": 13.351,
     "height_image_background": 21.143,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -5040,13 +5040,13 @@ const inputData = {
     "width_image_background": 9.625,
     "height_image_background": 6.979,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -5085,13 +5085,13 @@ const inputData = {
     "width_image_background": 10.25,
     "height_image_background": 7.935,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -5220,13 +5220,13 @@ const inputData = {
     "width_image_background": 11.625,
     "height_image_background": 7.349,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -5625,13 +5625,13 @@ const inputData = {
     "width_image_background": 18.884,
     "height_image_background": 25.81,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -7200,13 +7200,13 @@ const inputData = {
     "width_image_background": 20.911,
     "height_image_background": 22.587,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -7515,13 +7515,13 @@ const inputData = {
     "width_image_background": 0.4,
     "height_image_background": 0.511,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
@@ -7560,13 +7560,13 @@ const inputData = {
     "width_image_background": 0.25,
     "height_image_background": 0.297,
     "default_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1
     },
     "mouseover_style": {
-      "background_color": "#c0dbcb",
+      "background_color": "#d2dcfb",
       "background_opacity": 1,
       "stroke_opacity": 1,
       "stroke_width": 1

@@ -1,6 +1,6 @@
 export const environment = {
 	production: true,
-	urlGss: 'https://www.neufra.eu/',
+	urlGss: 'https://www.gss.eu/',
 	urlPrefix: './',
 	urlPrefixCore: './'
 };

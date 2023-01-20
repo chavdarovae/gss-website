@@ -1,6 +1,6 @@
 <div class="container">
     <section class="card-holder">
-        <!-- Über 40 Jahre Speditionserfahrung -->
+        <!-- Über 40 Jahre Erfahrung -->
         <article #speditionserfahrung class="card card--green card--big" id="speditionserfahrung">
             <div class="card__svg card__svg--small">
                 <img [src]="urlPrefix + 'assets/icons/medal.svg'" />
@@ -8,7 +8,7 @@
             <h2 translate="company.expericence.title"></h2>
             <div class="card__info" translate="company.expericence.info"></div>
         </article>
-        <!-- Neutraler Partner -->
+        <!-- Zuverlässiger Partner -->
         <article #partner class="card card--gray" id="partner">
             <div class="card__svg card__svg--small">
                 <img [src]="urlPrefix + 'assets/icons/handshake.svg'" />
@@ -16,8 +16,8 @@
             <h2 translate="company.partner.title"></h2>
             <div class="card__info" translate="company.partner.info"></div>
         </article>
-        <!-- Alles aus einer Partner -->
-        <article #hand class="card card--gray card--big" id="hand">
+        <!--  Leistungen aus 1. Hand -->
+        <article #hand class="card card--gray" id="hand">
             <div class="card__svg card__svg--small">
                 <img [src]="urlPrefix + 'assets/icons/globe.svg'" />
             </div>
@@ -25,37 +25,21 @@
             <div class="card__info" [innerHtml]="'company.sustainable.info' | translate">
             </div>
         </article>
-        <!-- Spezialist in LKW-Verkehren -->
-        <article #spezialist class="card card--green" id="spezialist">
+		<!-- Spezialist für Transportschäden -->
+		<article #sendungsverfolgung class="card card--green" id="sendungsverfolgung">
+			<div class="card__svg card__svg--small">
+				<img [src]="urlPrefix + 'assets/icons/tracking.svg'" />
+			</div>
+			<h2 translate="company.specialty1.title"></h2>
+			<div class="card__info" translate="company.specialty1.info"></div>
+		</article>
+        <!-- Spezialist für den KFZ Bereich -->
+        <article #spezialist class="card card--gray" id="spezialist">
             <div class="card__svg card__svg--small">
                 <img [src]="urlPrefix + 'assets/icons/lorry.svg'" />
             </div>
-            <h2 translate="company.specialty.title"></h2>
-            <div class="card__info" translate="company.specialty.info"></div>
-        </article>
-        <!-- Direkttransport ohne Umladung -->
-        <article #direkttransport class="card card--green" id="direkttransport">
-            <div class="card__svg card__svg--small">
-                <img [src]="urlPrefix + 'assets/icons/route.svg'" />
-            </div>
-            <h2 translate="company.direct-transportation.title"></h2>
-            <div class="card__info" translate="company.direct-transportation.info"></div>
-        </article>
-        <!-- Auf Wunsch Sendungsverfolgung -->
-        <article #sendungsverfolgung class="card card--gray" id="sendungsverfolgung">
-            <div class="card__svg card__svg--small">
-                <img [src]="urlPrefix + 'assets/icons/tracking.svg'" />
-            </div>
-            <h2 translate="company.shipment-tracking.title"></h2>
-            <div class="card__info" translate="company.shipment-tracking.info"></div>
-        </article>
-        <!-- Partner für eine digitale Zukunft -->
-        <article #digital class="card card--gray" id="digital">
-            <div class="card__svg card__svg--small">
-                <img [src]="urlPrefix + 'assets/icons/network.svg'" />
-            </div>
-            <h2 translate="company.digitalisation-partner.title"></h2>
-            <div class="card__info" translate="company.digitalisation-partner.info"></div>
+            <h2 translate="company.specialty2.title"></h2>
+            <div class="card__info" translate="company.specialty2.info"></div>
         </article>
     </section>
     <section class="history-holder">

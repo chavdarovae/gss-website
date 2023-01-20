@@ -199,13 +199,10 @@ body {
 }
 
 
-#oval-3036,
-#oval-3040,
-#oval-3034,
-#oval-3033,
-#oval-3038,
-#oval-3037,
+#oval-3009,
+#oval-3008,
 .doted {
+	background-color: $primary !important;
     &::before{
         content: "";
         display: block;
