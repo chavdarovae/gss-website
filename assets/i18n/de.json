@@ -15,32 +15,24 @@
   },
   "company": {
     "expericence": {
-      "title": "Über 40 Jahre Speditionserfahrung",
-      "info": "Seit 1979 übernehmen wir Komplett- und Teilladungen, optimieren deren Zusammenstellung und distributieren die Sendungen mit ausgesuchten, überprüften Transportunternehmen zu ihrem jeweiligen Bestimmungsort."
+      "title": "Über 40 Jahre Erfahrung",
+      "info": "Seit 1982 übernehmen wir Komplett- und Teilladungen, optimieren deren Zusammenstellung und distributieren die Sendungen mit ausgesuchten, überprüften Transportunternehmen zu ihrem jeweiligen Bestimmungsort."
     },
     "partner": {
-      "title": "Neutraler Partner",
+      "title": "Zuverlässiger Partner",
       "info": " Unsere Firmenphilosophie war von Anfang an, als Spediteur ausschließlich neutral für andere Speditionen tätig zu sein und sich dabei auf LKW-Verkehre zu spezialisieren."
     },
     "sustainable": {
-      "title": "Alles aus einer Hand",
+      "title": "Leistungen aus 1. Hand",
       "info": "Wir bringen nicht nur Ihre Sendung ans Ziel, wir kontrollieren auch alle Lademittelbewegungen und sorgen bei Lademittelschulden für eine zeitnahe Rückführung. Sollte mal ein Schaden entstehen, werden etwaige Ersatzansprüche unverzüglich bearbeitet. Bei komplizierten Schadensereignissen kooperieren wir hierbei mit unserer Tochtergesellschaft <a href='http://www.gss-gmbh.de/' target='_blank'>GSS Güter-Schaden-Service GmbH</a>."
     },
-    "specialty": {
-      "title": "Spezialist in LKW-Verkehren",
+    "specialty1": {
+      "title": "Spezialist für Transportschäden",
       "info": "Als Spezialist sind wir besser als der Globalanbieter - zu Ihrem Vorteil. Täglich befrachten wir ca. 1.200 LKW, disponiert von 33 NEUFRA-Niederlassungen in Europa."
     },
-    "direct-transportation": {
-      "title": "Direkttransport ohne Umladung",
-      "info": "Ihre Sendungen werden ohne Umladung auf direktem Weg zum Empfänger transportiert, sodass diese bei minimiertem Schadensrisiko schnell und zuverlässig zum gewünschten Zielort gelangen."
-    },
-    "shipment-tracking": {
-      "title": "Auf Wunsch Sendungsverfolgung",
-      "info": "Wir begleiten Ihre Sendung bis zur erfolgten Entladung beim Empfänger. Auf Wunsch können Sie jederzeit Statusupdates von uns erhalten."
-    },
-    "digitalisation-partner": {
-      "title": "Partner für eine digitale Zukunft",
-      "info": "Mit unserer IT-Abteilung entwickeln wir unsere Software immer weiter. Mit Colleto werden wir den Weg der Digitalisierung vorantreiben."
+    "specialty2": {
+      "title": "Spezialist für den KFZ Bereich",
+      "info": "Als Spezialist sind wir besser als der Globalanbieter - zu Ihrem Vorteil. Täglich befrachten wir ca. 1.200 LKW, disponiert von 33 NEUFRA-Niederlassungen in Europa."
     },
     "history": {
       "title": "Historie",
