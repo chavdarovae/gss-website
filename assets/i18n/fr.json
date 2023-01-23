@@ -4,7 +4,7 @@
         "company" : " société ",
         "locations" : "sites",
         "services" : "services",
-        "career" : "carrière",
+        "insurance" : "carrière",
         "transportCompany" : "entreprise de transport",
         "legalNotice" : "mentions légales",
         "dataPrivacy" : "protection des données"
@@ -51,7 +51,7 @@
     "services" : {
         "legalNotice" : "entreprise"
     },
-    "career" : {
+    "insurance" : {
         "legalNotice" : "entreprise"
     },
     "transportCompany" : {

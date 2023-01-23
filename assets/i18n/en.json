@@ -5,7 +5,7 @@
     "company": "company",
     "locations": "locations",
     "services": "services",
-    "career": "career",
+    "insurance": "insurance",
     "transportCompany": "transport company",
     "legalNotice": "legal notice",
     "dataPrivacy": "data privacy"
@@ -380,7 +380,7 @@
       "info": "Of course, we also transport your dangerous goods to all destinations by arrangement."
     }
   },
-  "career": {
+  "insurance": {
     "info": {
       "pr1": "Our employees are the basis of our company. Therefore, we are always looking for motivated new colleagues. Experienced dispatchers are the guarantor for quality and growth and are welcome to take on the challenge of independently handling a traffic relation.",
       "pr2": "Feel free to browse our current job offers, applications can be sent directly to the corresponding branch.",
