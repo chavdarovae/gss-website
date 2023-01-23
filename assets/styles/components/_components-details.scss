@@ -32,9 +32,27 @@
         font-weight: $font-weight-normal;
     }
 
+
+	&__add {
+        display: flex;
+		flex-flow: column nowrap;
+		width: fit-content;
+
+		@include for-tablet-landscape-up {
+			flex-flow: row nowrap;
+		}
+    }
+
 	&__block + .details__block {
-		margin-left: 20px;
-		padding-left: 20px;
-		border-left: 1px solid $text-color-secondary;
+		margin: 10px 0 0 0;
+		padding: 10px 0 0 0;
+		border-top: 1px solid $text-color-secondary;
+
+		@include for-tablet-landscape-up {
+			margin:  0 0 0 20px;
+			padding: 0 0 0 20px;
+			border-top: unset;
+			border-left: 1px solid $text-color-secondary;
+		}
 	}
 }
