@@ -1,5 +1,5 @@
 @import "../app-variables";
-.details{
+.details {
 
     * {
         color: $text-color-secondary;
@@ -31,4 +31,10 @@
     &__other {
         font-weight: $font-weight-normal;
     }
+
+	&__block + .details__block {
+		margin-left: 20px;
+		padding-left: 20px;
+		border-left: 1px solid $text-color-secondary;
+	}
 }
