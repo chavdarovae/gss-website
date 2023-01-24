@@ -38,15 +38,11 @@
               "src/sitemap.xml"
             ],
             "styles": [
-              "src/assets/image-map-pro/css/image-map-pro.min.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/image-map-pro/js/lib/jquery.min.js",
-              "src/assets/image-map-pro/js/image-map-pro.min.js",
-              "src/assets/scripts/screen-size.js",
-              "src/assets/image-map-pro/input.js"
+              "src/assets/scripts/screen-size.js"
             ]
           },
           "configurations": {
@@ -60,7 +56,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "4kb",
-                  "maximumError": "6kb"
+                  "maximumError": "8kb"
                 }
               ],
               "fileReplacements": [
@@ -113,14 +109,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/image-map-pro/css/image-map-pro.min.css",
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "src/assets/image-map-pro/js/lib/jquery.min.js",
-              "src/assets/image-map-pro/js/image-map-pro.min.js",
-              "src/assets/image-map-pro/map.js"
             ]
           }
         }
