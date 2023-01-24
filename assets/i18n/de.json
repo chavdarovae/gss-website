@@ -4,6 +4,7 @@
     "home-subtitle": "dem Versicherungsmakler",
     "company": "unternehmen",
     "locations": "standorte",
+	"career": "karriere",
     "kfz": "KFZ Bereich",
     "insurance": "versicherungslösungen",
     "transportDamage": "transportschäden",
@@ -16,15 +17,15 @@
   "company": {
     "expericence": {
       "title": "Über 40 Jahre Erfahrung",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
+      "info": "Seit 1982 bieten wir der Speditions und Logistikbranche unsere Unterstützung in allen Bereichen und versicherungsfragen an. Hierbei haben wir unseren Schwerpunkt auf die Schadenbearbeitung gesetzt."
     },
     "partner": {
       "title": "Zuverlässiger Partner",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
+      "info": "Durch speditionell geschultes Personal werden die komplexen Speditionsanliegen schnell erkannt. Wir verstehen hier uns als Bindeglied zwischen Logistik, Handel und Versicherung."
     },
     "sustainable": {
       "title": "Leistungen aus 1. Hand",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
+      "info": "Wir bearbeiten nicht nur die Schäden nach den Versicherungsvorschriften, sondern übernehmen auch die Korrespondenz mit allen Beteiligten. Wir führen den gesamten Schriftverkehr mit Anspruchstellern, Versicherern und Verursachern. Auch die Einleitung von Regressen gehört hier zu unseren Aufgaben. Natürlich werden unsere Kunden über alle anfallenden Schritte informiert."
     },
     "specialty1": {
       "title": "Spezialist für Transportschäden",
@@ -36,12 +37,7 @@
     },
     "history": {
       "title": "Historie",
-      "first": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
-	  "second": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
-	  "third": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
-    },
-    "documents": {
-      "title": "Wichtige GSS-Formulare zum Downloaden"
+      "first": "Am 01.01.1982 wurde die GSS durch die Neufra und ??? gegründet. Im Laufe der jahre hat die inzwischen 100% Tochter der Neufra Speditions GmbH sich auf dem Versicherungsmarkt etabliert und entwickelt. Für die Speditions- und Logistikbranche kann die GSS inzwischen ein umfassendes Fachwissen auf dem gebiet des Transportrechtes zur Verfügung stellen."
     }
   },
   "locations": {
@@ -348,6 +344,51 @@
       "Budapest": "Budapest",
       "Bregenz": "Bregenz",
       "Decin": "Decin"
+    }
+  },
+  "career": {
+    "info": {
+		"pr1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
+		"pr2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
+		"pr3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
+		"pr4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
+		"pr5": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
+    },
+    "position": "Position",
+    "location": "Standort",
+    "tasks": "Ihre Aufgaben",
+    "requirements": "Unsere Anforderungen",
+    "offer": "Unser Angebot",
+    "contactPerson": "Ihr Ansprechspartner",
+    "internship": {
+      "spedition": {
+        "title": "Kaufmann (m/w/d) für Spedition und Logistikdienstleistung",
+        "pr1": "Die NEUFRA Speditions Gruppe ist ein international aufgestelltes mittelständisches Unternehmen, das sich auf LKW-Verkehre spezialisiert hat. Täglich befrachten wir ca. 1200 LKW, disponiert von 33 NEUFRA-Niederlassungen in Europa. Dafür übernehmen wir seit 1979 Komplett- sowie Teilladungen und optimieren deren Zusammenstellung.",
+        "pr2": "Während deiner Ausbildung zum Kaufmann (m/w/d) für Spedition und Logistikdienstleistung für lernst du bei uns insbesondere die vielen Facetten der Disposition kennen. Beim Einkaufen, Planen und Verkaufen von Transportdienstleistungen erwarten dich täglich neue Aufgaben und Herausforderungen, die wir alle, auch unsere erfahrenen Disponenten/innen, stets gemeinsam im Team meistern. Deine Ausbildung verbindet selbstverständlich die speditionellen Spezifika mit den allgemeinen kaufmännischen Bereichen der Verwaltung und Buchhaltung.",
+        "pr3": "Wenn du,",
+        "li1": "kontaktfreudig bist,",
+        "li2": "Organisationstalent besitzt,",
+        "li3": "über Verhandlungsgeschick verfügst,",
+        "li4": "gern eigenständig arbeitest,",
+        "li5": "eigenverantwortlich Entscheidungen treffen möchtest und",
+        "li6": "auch in Stresssituationen den Überblick behältst,",
+        "pr4": "dann ist eine Ausbildung bei der NEUFRA für dich die richtige Wahl.",
+        "pr5": "Dich erwartet bei uns eine offene Unternehmenskultur mit flachen Hierarchien in einem persönlich geprägten Arbeitsumfeld. Dein Berufsalltag spielt sich in einem modernen Umfeld ab, in dem der Großteil der Prozessschritte bereits vollständig digitalisiert ist. Wir bieten dir einen zukunftssichereren Arbeitsplatz mit dem Ziel einer langfristigen Zusammenarbeit.",
+        "pr6": "Haben wir dein Interesse geweckt? Dann melde dich bei uns, wir bieten diese Berufsausbildung an all unseren Standorten an und freuen uns schon auf deine Bewerbung an die entsprechende Niederlassungsleitung."
+      },
+      "management": {
+        "title": "Kaufmann (m/w/d) für Büromanagement",
+        "pr1": "Die NEUFRA Speditions Gruppe ist ein international aufgestelltes mittelständisches Unternehmen, das sich auf LKW-Verkehre spezialisiert hat. Täglich befrachten wir ca. 1200 LKW, disponiert von 33 NEUFRA-Niederlassungen in Europa. Dafür übernehmen wir seit 1979 Komplett- sowie Teilladungen und optimieren deren Zusammenstellung. Die Abrechnung dieser Dienstleistungen findet am jeweiligen Standort statt, die kaufmännische Steuerung und Kontrolle aller Niederlassungen wird von unseren Mitarbeiterinnen und Mitarbeitern in der Zentralbuchhaltung in Neuss übernommen.",
+        "pr2": "Die Ausbildung Kaufmann (w/w/d) für Büromanagement zeichnet sich durch seine vielfältigen Lernfelder aus. Nach dem ersten Ausbildungsjahr vertiefst du daher dein Wissen in zwei von insgesamt zehn Wahlqualifikationen. Da du während deiner Ausbildung bei der NEUFRA viele Berührungspunkte mit den Themengebieten der Speditionsbranche hast, solltest du dich grundsätzlich auch für die Welt der Logistik interessieren.",
+        "pr3": "Wenn du,",
+        "li1": "Interesse am Umgang mit Zahlen hast,",
+        "li2": "Organisationstalent besitzt,",
+        "li3": "gründlich und strukturiert arbeitest,",
+        "li4": "selbstständig und verantwortungsbewusst handelst,",
+        "pr4": "dann ist eine Ausbildung bei der NEUFRA für dich die richtige Wahl.",
+        "pr5": "Dich erwartet bei uns eine offene Unternehmenskultur mit flachen Hierarchien in einem persönlich geprägten Arbeitsumfeld. Dein Berufsalltag spielt sich in einem modernen Umfeld ab, in dem der Großteil der Prozessschritte bereits vollständig digitalisiert ist. Wir bieten dir einen zukunftssichereren Arbeitsplatz mit dem Ziel einer langfristigen Zusammenarbeit.",
+        "pr6": "Haben wir dein Interesse geweckt? Dann melde dich bei uns; an unseren Standorten Deggendorf, Frankfurt, München, Neuss und Nürnberg bieten wir diese Berufsausbildung an. Bitte sende deine Bewerbungsunterlagen an die entsprechende Niederlassungsleitung."
+      }
     }
   },
   "kfzBereich": {
