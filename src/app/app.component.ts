@@ -27,7 +27,7 @@ export class AppComponent {
 		private sharedService: SharedService
 	) {
 		// Register translation languages
-		translate.addLangs(['de', 'en', 'fr']);
+		translate.addLangs(['de', 'en']);
 		// Set default language
 		translate.setDefaultLang('de');
 		// Set used language
@@ -50,11 +50,13 @@ export class AppComponent {
 				break;
 			case 'standorte': this.pageTitle = 'locations'
 				break;
-			case 'dienstleistungen': this.pageTitle = 'services'
-				break;
 			case 'karriere': this.pageTitle = 'career'
 				break;
-			case 'transportunternehmer': this.pageTitle = 'transportCompany'
+			case 'kfz-bereich': this.pageTitle = 'kfz'
+				break;
+			case 'versicherung': this.pageTitle = 'insurance'
+				break;
+			case 'tarnsportschaeden': this.pageTitle = 'transportDamage'
 				break;
 			case 'impressum': this.pageTitle = 'legalNotice'
 				break;

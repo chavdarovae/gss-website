@@ -23,28 +23,31 @@
                 <a routerLink="/unternehmen" class="menu__item-link"
                     [ngClass]="{'menu__item-link--active': activeTab === 'unternehmen'}" translate="header.company"></a>
             </li>
-            <!-- standorte -->
-            <li class="menu__item" (click)="menuToggle.click()">
-                <a routerLink="/standorte" class="menu__item-link"
-                    [ngClass]="{'menu__item-link--active': activeTab === 'standorte'}" translate="header.locations"></a>
-            </li>
-			  <!-- Transportschäden -->
-			  <li class="menu__item" (click)="menuToggle.click()">
-                <a routerLink="/transportunternehmer" class="menu__item-link"
-                    [ngClass]="{'menu__item-link--active': activeTab === 'transportunternehmer'}"
-                    translate="header.transportCompany"></a>
+			<!-- Versicherungslösungen -->
+			<li class="menu__item" (click)="menuToggle.click()">
+				<a routerLink="/versicherung" class="menu__item-link"
+					[ngClass]="{'menu__item-link--active': activeTab === 'versicherung'}" translate="header.insurance"></a>
+			</li>
+			<!-- Transportschäden -->
+			<li class="menu__item" (click)="menuToggle.click()">
+				<a routerLink="/tarnsportschaeden" class="menu__item-link"
+					[ngClass]="{'menu__item-link--active': activeTab === 'tarnsportschaeden'}" translate="header.transportDamage"></a>
             </li>
             <!-- KFZ Bereich -->
             <li class="menu__item" (click)="menuToggle.click()">
-                <a routerLink="/dienstleistungen" class="menu__item-link"
-                    [ngClass]="{'menu__item-link--active': activeTab === 'dienstleistungen'}"
-                    translate="header.services"></a>
+                <a routerLink="/kfz-bereich" class="menu__item-link"
+                    [ngClass]="{'menu__item-link--active': activeTab === 'kfz-bereich'}" translate="header.kfz"></a>
             </li>
-            <!-- karriere -->
-            <!-- <li class="menu__item" (click)="menuToggle.click()">
-                <a routerLink="/karriere" class="menu__item-link"
-                    [ngClass]="{'menu__item-link--active': activeTab === 'karriere'}" translate="header.career"></a>
-            </li> -->
+			<!-- Karriere -->
+			<li class="menu__item" (click)="menuToggle.click()">
+				<a routerLink="/karriere" class="menu__item-link"
+					[ngClass]="{'menu__item-link--active': activeTab === 'karriere'}" translate="header.career"></a>
+			</li>
+			<!-- standorte -->
+			<li class="menu__item" (click)="menuToggle.click()">
+				<a routerLink="/standorte" class="menu__item-link"
+					[ngClass]="{'menu__item-link--active': activeTab === 'standorte'}" translate="header.locations"></a>
+			</li>
             <!-- impressum - datenschutz -->
             <li class="menu__item menu__item--footer show-on-tablet" (click)="menuToggle.click()">
                 <a routerLink="/impressum" class="menu__item-link" translate="footer.legalNotice"></a>

@@ -18,6 +18,7 @@
         /* The points are: centered top, left bottom, right bottom */
         clip-path: polygon($center-pos 0, 100% calc($footer-height-phone/3), 100% 100%, 0 100%,0 calc($footer-height-phone/3));
 
+
         @include for-tablet-portrait-up {
             height: $footer-height-tablet-portrait;
             clip-path: polygon($center-pos 0, 100% calc($footer-height-tablet-portrait/3), 100% 100%, 0 100%,0 calc($footer-height-tablet-portrait/3));
@@ -89,8 +90,16 @@
         }
 
         &::after {
+			content: "GSS";
+			color: $primary;
+			font-size: 20px;
+			padding: 20px auto 5px auto;
             background: $body-bg;
-            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			font-family: 'Chivo Mono', monospace;
+			// clip-path: polygon(0 35%, 0 0, 100% 0, 100% 100%, 0 100%, 0 65%, 35% 65%, 35% 35%);
             height: 40px;
             width: 40px;
             position: absolute;
@@ -113,6 +122,7 @@
             }
 
             @include for-tablet-landscape-up {
+				font-size: 30px;
                 height: 60px;
                 width: 60px;
                 transform: translate(-50%, -50%)
@@ -122,6 +132,7 @@
             }
 
             @include for-desktop-up {
+				font-size: 35px;
                 height: 70px;
                 width: 70px;
                 transform: translate(-50%, -50%)

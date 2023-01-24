@@ -46,23 +46,6 @@
         <h2 translate="company.history.title"></h2>
         <div>
             <p translate="company.history.first"></p>
-            <p translate="company.history.second"></p>
-            <p translate="company.history.third"></p>
-        </div>
-    </section>
-    <!-- Documents section -->
-    <section>
-        <h2 translate="company.documents.title"></h2>
-        <div class="document-holder">
-            <article class="document" *ngFor="let document of docuList">
-				<i class="far fa-file-pdf"></i>
-                <span class="document__name">{{document[0]}}</span>
-                <span class="document__size hide-on-mobile">({{document[2]}}kB)</span>
-                <a [href]="urlPrefix + 'assets/files/documents/' + document[0] + '.' + document[1]" [download]="document[0]">
-					<i class="far fa-arrow-alt-circle-down show-on-mobile"></i>
-                    <span class="hide-on-mobile">Download</span>
-                </a>
-            </article>
         </div>
     </section>
 </div>

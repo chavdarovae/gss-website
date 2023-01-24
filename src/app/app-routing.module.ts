@@ -1,12 +1,13 @@
 import { RouterModule, Routes } from '@angular/router';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
-import { DienstleistungenComponent } from './dienstleistungen/dienstleistungen.component';
 import { HomeComponent } from './home/home.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { KarriereComponent } from './karriere/karriere.component';
+import { KfzBereichComponent } from './kfz-bereich/kfz-bereich.component';
 import { StandorteComponent } from './standorte/standorte.component';
-import { TransportunternehmerComponent } from './transportunternehmer/transportunternehmer.component';
+import { TarnsportschaedenComponent } from './transportschaeden/transportschaeden.component';
 import { UnternehmenComponent } from './unternehmen/unternehmen.component';
+import { VersicherungComponent } from './versicherung/versicherung.component';
 
 const routes: Routes = [
 	{
@@ -19,23 +20,28 @@ const routes: Routes = [
 		data: {}
 	},
 	{
-		path: 'standorte',
-		component: StandorteComponent,
-		data: {}
-	},
-	{
 		path: 'karriere',
 		component: KarriereComponent,
 		data: {}
 	},
 	{
-		path: 'dienstleistungen',
-		component: DienstleistungenComponent,
+		path: 'standorte',
+		component: StandorteComponent,
 		data: {}
 	},
 	{
-		path: 'transportunternehmer',
-		component: TransportunternehmerComponent,
+		path: 'versicherung',
+		component: VersicherungComponent,
+		data: {}
+	},
+	{
+		path: 'kfz-bereich',
+		component: KfzBereichComponent,
+		data: {}
+	},
+	{
+		path: 'tarnsportschaeden',
+		component: TarnsportschaedenComponent,
 		data: {}
 	},
 	{

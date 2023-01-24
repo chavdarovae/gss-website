@@ -1,21 +1,33 @@
-<div class="location" id="locationInfo">
-	<!-- <section class="locations__info container">
-		<p>{{'locations.info' | translate}}</p>
-	</section> -->
-	<section #mapContainer class="locations__map" id="locationMap">
-		<!-- Location Name Button hidden, used to transfer information from the map -->
-		<button #showDetailsBtn class="hidden" id="showDetailsBtn" (click)="showLocationDetails(showDetailsBtn.textContent)"></button>
-		<div class="map" id="image-map-pro-container"></div>
-	</section>
-	<div class="container row">
-		<div class="row  mr-30">
-			<div class="dot arrow"></div>
-			<span>{{'locations.centralAccountingAndHeadquarters' | translate}}</span>
-		</div>
-		<div class="row">
-			<div class="dot doted"></div>
-			<span>{{'locations.headquarters' | translate}}</span>
+<div class="container">
+	<div class="location">
+		<img class="location__img" [src]="urlPrefix + 'assets/img/frankfurt.jpg'" alt="Standort Frankfurt">
+		<div class="location__address details">
+			<h4 class="details__name">GSS Güter Schaden Service GmbH</h4>
+			<a class="details__adr" href="https://maps.google.com/?q=2-4 Heinrich-Lanz-Allee, Frankfurt, 60437" target="_blank">
+				<img [src]="urlPrefix + 'assets/icons/location.svg'" alt="location.svg"/>
+				<span class="column">
+					<span>Heinrich-Lanz-Allee 2-4</span>
+					<span>60437 Frankfurt</span>
+				</span>
+			</a>
+			<a class="details__tel" href="tel:496950701621"><img [src]="urlPrefix + 'assets/icons/phone.svg'" alt="phone.svg"/>+49 (69) 50 70 16 21</a>
+			<a class="details__mail" href="mailto:info@gss-gmbh.de" class="email"><img [src]="urlPrefix + 'assets/icons/email.svg'"  alt="email.svg"/>info@gss-gmbh.de</a>
 		</div>
 	</div>
-</div>
 
+	<div class="location">
+		<div class="location__address details">
+			<h4 class="details__name">GSS Güter Schaden Service GmbH</h4>
+			<a class="details__adr" href="https://maps.google.com/?q=8 Moselstraße, Neuss, 41464" target="_blank">
+				<img [src]="urlPrefix + 'assets/icons/location.svg'" alt="location.svg"/>
+				<span class="column">
+					<span>Moselstraße 8</span>
+					<span>41464 Neuss</span>
+				</span>
+			</a>
+			<a class="details__tel" href="tel:004921313693594"><img [src]="urlPrefix + 'assets/icons/phone.svg'" alt="phone.svg"/>+49 (2131) 369 359 4</a>
+			<a class="details__mail" href="mailto:info@gss-gmbh.de" class="email"><img [src]="urlPrefix + 'assets/icons/email.svg'"  alt="email.svg"/>info@gss-gmbh.de</a>
+		</div>
+		<img class="location__img" [src]="urlPrefix + 'assets/img/zolltor.jpg'" alt="Standort Neuss">
+	</div>
+</div>

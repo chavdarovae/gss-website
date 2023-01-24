@@ -1,0 +1,225 @@
+@import "../../assets/styles/app-variables";
+@import "../../assets/styles/settings/settings-breakpoints";
+
+.carrier {
+
+
+    &__info {
+		margin-bottom: 50px;
+		&-more {
+			margin-left: 10px;
+		}
+    }
+
+	&__table{
+
+    }
+}
+
+.table {
+    i {
+        font-size: 2*$font-size-base;
+        color: $primary;
+
+        &:hover {
+            color: $text-color-primary;
+        }
+    }
+
+	.position__short {
+		cursor: pointer;
+
+		h5:hover {
+            color: $text-color-thirdery;
+        }
+	}
+
+    &__header,
+    .position__short,
+    .position__long {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 110px;
+        justify-content: stretch;
+        align-content: center;
+        row-gap: 5px;
+        column-gap: 10px;
+
+        @include for-tablet-portrait-up {
+            grid-template-columns: 1fr 170px 110px;
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+
+        @include for-desktop-up {
+            grid-template-columns: 1fr 350px 30px;
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+    }
+
+    &__header {
+        padding: 10px 10px;
+        border-bottom: 3px solid $primary;
+        grid-template-areas:
+            "headerTitle headerLocation";
+
+        @include for-tablet-portrait-up  {
+            padding: 10px 20px;
+            grid-template-areas:
+            "headerTitle . headerLocation";
+        }
+
+        @include for-desktop-up {
+            padding: 10px 30px;
+            grid-template-areas:
+            "headerTitle headerLocation headerLocation";
+        }
+
+        i {
+            margin-left: 5px;
+            font-size: 1.5*$font-size-base;
+        }
+
+    }
+
+    .position {
+        width: 100%;
+        border-bottom: 3px solid $primary;
+
+        &__short {
+            padding: 20px 10px 15px 10px;
+            grid-template-areas:
+            "title location"
+            "title toggle";
+
+            @include for-tablet-portrait-up  {
+                padding: 20px 30px 15px 20px;
+                grid-template-areas:
+                "title title location"
+                "title title toggle";
+            }
+
+            @include for-desktop-up {
+                padding: 20px 30px 15px 30px;
+                grid-template-areas:
+                "title location toggle";
+            }
+        }
+
+        &__long {
+            padding: 0 10px 30px 10px;
+            grid-template-areas:
+            "descripion descripion"
+            "tasks tasks"
+            "requirements requirements"
+            "offer offer"
+            "partner partner";
+
+            @include for-tablet-portrait-up {
+                padding: 0 20px 30px 20px;
+                grid-template-areas:
+                "descripion descripion descripion"
+                "tasks tasks tasks"
+                "requirements partner partner"
+                "offer partner partner";
+            }
+
+            @include for-desktop-up {
+                padding: 0 30px 30px 30px;
+                grid-template-areas:
+                "descripion descripion descripion"
+                "tasks tasks tasks"
+                "requirements partner partner"
+                "offer partner partner";
+            }
+        }
+
+        &__header-title {
+            grid-area: headerTitle;
+        }
+
+        &__header-location {
+            grid-area: headerLocation;
+        }
+
+        &__title {
+            grid-area: title;
+        }
+
+        &__location {
+            grid-area: location;
+        }
+
+        &__toggle {
+            grid-area: toggle;
+            width: 30px;
+            transition: transform 600ms linear;
+            transform-origin: center center;
+            transform-style: preserve-3D;
+            width: fit-content;
+
+            &.fa-angle-down{
+                transform: rotate(0deg);
+            }
+
+            &.fa-angle-down.expand {
+                transform: rotate(180deg);
+            }
+        }
+
+        &__descripion {
+            grid-area: descripion;
+        }
+
+        &__tasks {
+            grid-area: tasks;
+        }
+
+        &__requirements {
+            grid-area: requirements;
+        }
+
+        &__offer {
+            grid-area: offer;
+        }
+
+        &__partner {
+            grid-area: partner;
+			align-self: end;
+			margin-bottom: 20px;
+        }
+    }
+}
+
+.card {
+    width: 100%;
+    background-color: $primary;
+    padding: 20px;
+
+    &__header {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $text-color-secondary;
+    }
+
+    i {
+        font-size: 1.5*$font-size-base;
+        color: $text-color-secondary !important;
+        margin-right: 10px;
+    }
+
+    * {
+        color: $text-color-secondary;
+    }
+}
+
+
+ul {
+	margin-left: 20px;
+
+	li {
+		vertical-align: middle;
+		list-style-position: outside;
+	}
+}
+
