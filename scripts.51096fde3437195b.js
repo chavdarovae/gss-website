@@ -1,0 +1,1 @@
+let vh=.01*window.innerHeight;document.documentElement.style.setProperty("--vh",`${vh}px`);let mobileVersion=window.innerWidth<500,notDesktopVersion=window.innerWidth<1200;
