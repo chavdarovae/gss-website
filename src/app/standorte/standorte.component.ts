@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { environment } from './../../environments/environment';
 declare let locations: any;
 declare let inputData: any;
@@ -8,11 +8,6 @@ declare let inputCode: any;
 	templateUrl: './standorte.component.html',
 	styleUrls: ['./standorte.component.scss']
 })
-export class StandorteComponent implements OnInit {
+export class StandorteComponent {
 	urlPrefix = environment.urlPrefix;
-
-	constructor() {}
-
-	ngOnInit(): void {
-	}
 }

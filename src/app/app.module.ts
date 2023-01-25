@@ -18,7 +18,6 @@ import { ImpressumComponent } from './impressum/impressum.component';
 import { InternshipComponent } from './karriere/internship/internship.component';
 import { KarriereComponent } from './karriere/karriere.component';
 import { KfzBereichComponent } from './kfz-bereich/kfz-bereich.component';
-import { NichtGefundenComponent } from './nicht-gefunden/nicht-gefunden.component';
 import { CsvService } from './shared/csv.service';
 import { ScriptService } from './shared/script.service';
 import { SharedService } from './shared/shared.service';
@@ -43,7 +42,6 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
 		KfzBereichComponent,
 		VersicherungComponent,
 		TarnsportschaedenComponent,
-		NichtGefundenComponent,
 		ImpressumComponent,
 		DatenschutzComponent,
 		HomeComponent,

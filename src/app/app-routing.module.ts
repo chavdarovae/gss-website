@@ -16,53 +16,41 @@ const routes: Routes = [
 	},
 	{
 		path: 'unternehmen',
-		component: UnternehmenComponent,
-		data: {}
+		component: UnternehmenComponent
 	},
 	{
 		path: 'karriere',
-		component: KarriereComponent,
-		data: {}
+		component: KarriereComponent
 	},
 	{
 		path: 'standorte',
-		component: StandorteComponent,
-		data: {}
+		component: StandorteComponent
 	},
 	{
 		path: 'versicherung',
-		component: VersicherungComponent,
-		data: {}
+		component: VersicherungComponent
 	},
 	{
 		path: 'kfz-bereich',
-		component: KfzBereichComponent,
-		data: {}
+		component: KfzBereichComponent
 	},
 	{
 		path: 'tarnsportschaeden',
-		component: TarnsportschaedenComponent,
-		data: {}
+		component: TarnsportschaedenComponent
 	},
 	{
 		path: 'impressum',
-		component: ImpressumComponent,
-		data: {}
+		component: ImpressumComponent
 	},
 	{
 		path: 'datenschutz',
-		component: DatenschutzComponent,
-		data: {}
+		component: DatenschutzComponent
 	},
 	{
 		path: '',
 		pathMatch: 'prefix', //default
 		redirectTo: 'home'
-	},
-	// {
-	// 	path: '**',
-	// 	component: NichtGefundenComponent
-	// },
+	}
 ];
 
 export const AppRoutingModule = RouterModule.forRoot(routes, {
