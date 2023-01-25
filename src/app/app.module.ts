@@ -1,9 +1,7 @@
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatTableModule } from '@angular/material/table';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatLegacyDialogModule as MatDialogModule } from '@angular/material/legacy-dialog';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -61,9 +59,7 @@ export function httpTranslateLoaderFactory(http: HttpClient) {
 				deps: [HttpClient]
 			}
 		}),
-		MatDialogModule,
-		MatTabsModule,
-		MatTableModule
+		MatDialogModule
 	],
 	providers: [
 		SharedService,
