@@ -25,14 +25,14 @@
 	}
 
 
-	&__img {
-    	height: 300px;
+	// &__img {
+    // 	height: 300px;
 
-		@include for-tablet-landscape-up {
-			width: 60%;
-			height: auto;
-		}
-    }
+	// 	@include for-tablet-landscape-up {
+	// 		width: auto;
+	// 		height: auto;
+	// 	}
+    // }
 
 	&__address {
         height: 200px;
@@ -44,16 +44,20 @@
 
 		@include for-tablet-landscape-up {
 			padding-left: 20px;
-			width: 40%;
 			order: unset;
 			margin-top: unset;
 			height: 100%;
 		}
 
 		&:first-child {
+			border-bottom: 1px solid $text-color-secondary;
+
 			@include for-tablet-landscape-up {
+				width: 60%;
 				align-items: flex-end;
 				padding-right: 20px;
+				border-bottom: none;
+				border-right: 1px solid $text-color-secondary;
 			}
 		}
     }

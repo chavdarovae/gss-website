@@ -16,6 +16,13 @@
             </div>
             <h4 class="card__title" translate="company.specialty2.title"></h4>
         </a>
+		 <!-- Individuelle Versicherungslloesungen -->
+		 <a [routerLink]="['/unternehmen']" fragment="partner" class="card">
+            <div class="card__svg card__svg--hexgonal">
+                <img [src]="urlPrefix + 'assets/icons/handshake.svg'" alt="handshake.svg"/>
+            </div>
+            <h4 class="card__title" translate="company.partner.title"></h4>
+        </a>
 	</section>
 	<section  class="card-holder">
         <!-- Über 40 Jahre Erfahrung -->
@@ -24,13 +31,6 @@
                 <img [src]="urlPrefix + 'assets/icons/medal.svg'" alt="medal.svg"/>
             </div>
             <h4 class="card__title" translate="company.expericence.title"></h4>
-        </a>
-        <!-- Zuverlässiger Partner -->
-        <a [routerLink]="['/unternehmen']" fragment="partner" class="card">
-            <div class="card__svg card__svg--hexgonal">
-                <img [src]="urlPrefix + 'assets/icons/handshake.svg'" alt="handshake.svg"/>
-            </div>
-            <h4 class="card__title" translate="company.partner.title"></h4>
         </a>
         <!-- Leistungen aus 1. Hand -->
         <a [routerLink]="['/unternehmen']" fragment="hand" class="card">
