@@ -21,7 +21,7 @@
     },
     "partner": {
       "title": "Individuelle Versicherungslösungen",
-      "info": "Sie unterscheiden sich von anderen Unternehmen? – Wieso sollte Ihre Versicherung sich nicht vom Standard unterscheiden ? Wir haben es uns zur Aufgabe gemacht, Versicherungslücken zu erkennen und diese durch individuelle Lösungen zu schließen. Hierzu greifen wir auf ein großes Versicherungsnetzwerk zurück. Durch die partnerschaftliche Arbeit mit den Versicherern ist es uns möglich auf die individuellen Ansprüche einzugehen."
+      "info": "Durch eine genaue Analyse Ihrer Bedürfnisse und Vergleich auf dem Versicherungsmarkt, sind wir in der Lage einen optimalen Versicherungsschutz zu bestimmen. Hierbei wird immer eine kostenschonende Versicherungslösung angestrebt."
     },
     "sustainable": {
       "title": "Partnerschaftliche Zusammenarbeit",
@@ -29,7 +29,7 @@
     },
     "specialty1": {
       "title": "Spezialist für Transportschäden",
-      "info": "Unser Team wird durch gelernte Speditionskaufleute unterstützt und kann so bereits auf eine langjährige Berufserfahrung im Bereich der Transportschadenbearbeitung zurückgreifen. Der Erfahrungsschatz hat sich im Laufe der Zeit auf dem Gebiet der Transportschäden immer weiter angereichert. Hierdurch ist die Abwicklungen der Transportschäden für alle Verkehrsträgern zu unserem „täglichen Brot“ geworden"
+      "info": "Unser Team wird durch gelernte Speditionskaufleute unterstützt und kann so bereits auf eine langjährige Berufserfahrung im Bereich der Transportschadenbearbeitung zurückgreifen. Der Erfahrungsschatz hat sich im Laufe der Zeit auf dem Gebiet der Transportschäden immer weiter angereichert. Hierdurch ist die Abwicklungen der Transportschäden für alle Verkehrsträgern zu unserem „täglichen Brot“ geworden."
     },
     "specialty2": {
       "title": "Spezialist für den KFZ Bereich",
@@ -37,7 +37,7 @@
     },
     "history": {
       "title": "Historie",
-      "first": "Am 01.01.1982 wurde die GSS in Frankfurt gegründet. Zu den anfänglichen Zielen gehörte die Unterstützung unserer Partner vorwiegend in den Bereichen der Bearbeitung und Analyse von Schadenfällen sowie der Besorgung und Optimierung des Deckungsschutzes. Im Jahr 2008 wurde unsere Niederlassung in Neuss gegründet, um einen flächendeckenden Service zu gewährleisten. Im Laufe dieser Jahre hat sich die GSS Güter Schaden Service GmbH auf dem Versicherungsmarkt etabliert und entwickelt. Für die Speditions- und Logistikbranche kann die GSS Güter Schaden Service GmbH inzwischen ein umfassendes Fachwissen auf dem Gebiet des Transportrechtes zur Verfügung stellen."
+      "first": "Am 01.01.1982 wurde die GSS Güter Schaden Service GmbH in Frankfurt gegründet. Zu den anfänglichen Zielen gehörte die Unterstützung unserer Partner vorwiegend in den Bereichen der Bearbeitung und Analyse von Schadenfällen sowie der Besorgung und Optimierung des Deckungsschutzes. Im Jahr 2008 wurde unsere Niederlassung in Neuss gegründet, um einen flächendeckenden Service zu gewährleisten. Im Laufe dieser Jahre hat sich die GSS Güter Schaden Service GmbH auf dem Versicherungsmarkt etabliert und entwickelt. Für die Speditions- und Logistikbranche kann die GSS Güter Schaden Service GmbH inzwischen ein umfassendes Fachwissen auf dem Gebiet des Transportrechtes zur Verfügung stellen."
     }
   },
   "locations": {
@@ -94,6 +94,9 @@
     }
   },
   "kfzBereich": {
+	"pr1": "Unfälle, Glasbruchschäden oder Rangierschäden – kein Problem mit der richtigen KFZ-Versicherung Immer wieder passieren in unserem Alltag ungeplante Schäden. Nur mit einer flexiblen und umfassenden KFZ-Versicherung können Sie Ihren PKW oder Fuhrpark schützen und absichern.",
+	"pr2": "Darunter bitte auch die länglichen Kacheln mit den Überschriften : Flottenpolicen / PKW / Partner",
+	"pr3": "Bei der Kachel Partner versuche ich links zu unseren Partner zu hinterlegen, so dass der Nutzer evtl. selbst eine Berechnung vornehmen kann.",
     "national": {
       "title": "Nationale Linienverkehre",
       "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
@@ -117,11 +120,13 @@
   },
   "insurance": {
     "info": {
-		"pr1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
-		"pr2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
-		"pr3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
-		"pr4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?" ,
-		"pr5": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
+		"pr1": "Sie unterscheiden sich von anderen Unternehmen? – Wieso sollte Ihre Versicherung sich nicht vom Standard unterscheiden ? Wir haben es uns zur Aufgabe gemacht, Versicherungslücken zu erkennen und diese durch individuelle Lösungen zu schließen. Hierzu greifen wir auf ein großes Versicherungsnetzwerk zurück. Durch die partnerschaftliche Arbeit mit den Versicherern ist es uns möglich auf die individuellen Ansprüche einzugehen." ,
+		"pr2": "Wir unterstützen Sie während des kompletten Deckungsprozesses, um jederzeit bedarfsgerechte Lösungen anzubieten. Damit im Falle eines Schadens Sie beruhigt sich dem Tagesgeschäft annehmen können." ,
+		"pr3": "Wir bieten Ihnen Unterstützung in folgenden Bereichen an:",
+		"li1": "Verkehrshaftung",
+		"li2": "Warentransportversicherung",
+		"li3": "Sach- und Haftpflichtversicherungen",
+		"li4": "KFZ-Versicherung"
     },
     "position": "Position",
     "location": "Standort",
@@ -160,7 +165,10 @@
       }
     }
   },
-  "transportCompany": {
+  "transportDamage": {
+	"pr1": "Ein Schaden stellt immer für alle Beteiligte einen unangenehmen Aufwand dar.  Wir haben es uns zur Aufgabe gemacht, unsere Kunden in dieser Situation bestmöglich zu unterstützen.",
+	"pr2": "Egal ob Beschädigungen, Verluste, Lieferfristüberschreitungen oder Fehlverladungen: wir übernehmen den kompletten Schriftverkehr und die Abwicklung mit allen Beteiligten für Ihr Haus. Unabhängig von bestehenden Versicherungsverträgen treten wir für unsere Kunden in die Schaden- und Regressbearbeitung ein.",
+	"pr3": "Haben wir Ihr Interesse geweckt? Dann rufen Sie uns an.",
     "capacityExploitation": {
       "title": "Sie suchen eine optimale Auslastung für Ihre Fahrzeuge?",
       "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
