@@ -33,7 +33,7 @@
     },
     "specialty2": {
       "title": "Spezialist für den KFZ Bereich",
-      "info": "Alle wissenswerten Details rund um die KFZ-Versicherung erklären wir Ihnen gerne. Neben der Optimierung der KFZ-Policen überprüfen wir stetig die vorhandenen Policen. Ebenfalls ist uns die Abwicklung von KFZ Schäden nicht unbekannt. Der Schriftverkehr mit Gutachtern, Werkstätten, Versicherern, Geschädigten oder Verursachern gehört für uns selbstverständlich neben der Flottenbetreuung dazu."
+      "info": "Alle wissenswerten Details rund um die KFZ-Versicherung erklären wir Ihnen gerne. Sollte es Optimierungsbedarf bei Ihrer Police geben, decken wir diesen im Rahmen stetiger Überprüfungen auf. Die Abwicklung von KFZ-Schäden ergänzt unser Portfolio; der Schriftverkehr mit allen Beteiligten gehört für uns selbstverständlich neben der Flottenbetreuung dazu."
     },
     "history": {
       "title": "Historie",
@@ -50,11 +50,11 @@
   },
   "career": {
     "info": {
-		"pr1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
-		"pr2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
-		"pr3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
-		"pr4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?",
-		"pr5": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
+		"pr1": "Werden Sie Teil unseres Teams!",
+		"pr2": "Nur als Team können wir erfolgreich sein. Daher suchen wir immer neue Kollegen/-innen die mit Ehrgeiz und Leidenschaft ihre individuellen Fähigkeiten einbringen. Durch unser herausforderndes und interessantes Umfeld haben Sie die Möglichkeit frühzeitig Verantwortung zu übernehmen. Hier zu unserem Stellenangebot:",
+		"pr3": "Oder suchst Du eine Ausbildungsstelle? Wir freuen uns auf Bewerbungen junger Talente. Hier geht es zu unserem Ausbildungsangebot:",
+		"pr4": "Stellenangebot",
+		"pr5": "Ausbildungsangebot"
     },
     "position": "Position",
     "location": "Standort",
@@ -94,27 +94,19 @@
     }
   },
   "kfzBereich": {
-	"pr1": "Unfälle, Glasbruchschäden oder Rangierschäden – kein Problem mit der richtigen KFZ-Versicherung Immer wieder passieren in unserem Alltag ungeplante Schäden. Nur mit einer flexiblen und umfassenden KFZ-Versicherung können Sie Ihren PKW oder Fuhrpark schützen und absichern.",
+	"pr1": "Ob durch Unfälle oder Missgeschicke beim Rangieren, immer wieder entstehen in unserem Alltag ärgerliche Schäden. Ein flexibler und umfassender KFZ-Versicherungsschutz ist daher das A und O für PKW und Fuhrpark-Inhaber*innen. Kommt es dann mal zu einem Schadensereignis können Sie gelassen bleiben, denn Sie melden uns nur den Vorfall. Den Schriftverkehr mit Gutachtern, Werkstätten, Versicherern, Geschädigten und Verursachern übernehmen wir für Sie.",
 	"pr2": "Darunter bitte auch die länglichen Kacheln mit den Überschriften : Flottenpolicen / PKW / Partner",
 	"pr3": "Bei der Kachel Partner versuche ich links zu unseren Partner zu hinterlegen, so dass der Nutzer evtl. selbst eine Berechnung vornehmen kann.",
     "national": {
-      "title": "Nationale Linienverkehre",
+      "title": "Flottenpolice",
       "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "european": {
-      "title": "Europaweite Transporte",
+      "title": "PKW",
       "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     },
     "international": {
-      "title": "Internationale Transporte",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
-    },
-    "temperatureControlled": {
-      "title": "Temperaturgeführte Transporte",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
-    },
-    "dangerGoodss": {
-      "title": "Gefahrguttransporte",
+      "title": "Partner",
       "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
     }
   },
