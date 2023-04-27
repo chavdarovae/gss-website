@@ -112,13 +112,16 @@
   },
   "insurance": {
     "info": {
-		"pr1": "Sie unterscheiden sich von anderen Unternehmen? – Wieso sollte Ihre Versicherung sich nicht vom Standard unterscheiden ? Wir haben es uns zur Aufgabe gemacht, Versicherungslücken zu erkennen und diese durch individuelle Lösungen zu schließen. Hierzu greifen wir auf ein großes Versicherungsnetzwerk zurück. Durch die partnerschaftliche Arbeit mit den Versicherern ist es uns möglich auf die individuellen Ansprüche einzugehen." ,
-		"pr2": "Wir unterstützen Sie während des kompletten Deckungsprozesses, um jederzeit bedarfsgerechte Lösungen anzubieten. Damit im Falle eines Schadens Sie beruhigt sich dem Tagesgeschäft annehmen können." ,
-		"pr3": "Wir bieten Ihnen Unterstützung in folgenden Bereichen an:",
+		"pr1": "Mit unseren Versicherungslösungen beherrschen Sie Ihre Risiken. " ,
+		"pr2": "Als Experten für Risikoabsicherungen in der Transport- und Logistikbranche wissen wir, dass nur maßgeschneiderte Versicherungslösungen den bestmöglichen Schutz bieten. Aus diesem Grund analysieren wir die verschiedenen Komponenten Ihrer individuellen logistischen Lösungen und den daraus resultierenden Risiken. Dabei berücksichtigen wir selbstverständlich auch immer die Anforderungen und Wünsche Ihrer Kunden in diesen Bereichen." ,
+		"pr3": "Wir sorgen für Absicherung in allen Details durch individuelles Wording in den Versicherungspolicen.",
+		"pr4": "Unsere Kernkompetenzen liegen in diesen Bereichen:",
 		"li1": "Verkehrshaftung",
 		"li2": "Warentransportversicherung",
-		"li3": "Sach- und Haftpflichtversicherungen",
-		"li4": "KFZ-Versicherung"
+		"li3": "Gebäudeversicherung",
+		"li4": "Wareninhaltsversicherung",
+		"li5": "Betriebshaftpflicht",
+		"li6": "KFZ-Flottenversicherung"
     },
     "position": "Position",
     "location": "Standort",
@@ -158,9 +161,11 @@
     }
   },
   "transportDamage": {
-	"pr1": "Ein Schaden stellt immer für alle Beteiligte einen unangenehmen Aufwand dar.  Wir haben es uns zur Aufgabe gemacht, unsere Kunden in dieser Situation bestmöglich zu unterstützen.",
-	"pr2": "Egal ob Beschädigungen, Verluste, Lieferfristüberschreitungen oder Fehlverladungen: wir übernehmen den kompletten Schriftverkehr und die Abwicklung mit allen Beteiligten für Ihr Haus. Unabhängig von bestehenden Versicherungsverträgen treten wir für unsere Kunden in die Schaden- und Regressbearbeitung ein.",
-	"pr3": "Haben wir Ihr Interesse geweckt? Dann rufen Sie uns an.",
+	"pr1": "Egal ob es sich um einen Elementarschaden handelt oder auch nur eine kleine Beschädigung vorliegt, alles was außerhalb der Norm passiert, stört Ihre täglichen Routinen.",
+	"pr2": "Wir haben es uns zur Aufgabe gemacht, unsere Kunden in diesen Situationen bestmöglich zu unterstützen.",
+	"pr3": "Die Bearbeitung der häufigsten Ereignisse wie z.B. Beschädigungen oder Lieferfristüberschreitungen ist bei uns in guten Händen. Auch diffizilere Ereignisse wie Unfälle, Verluste oder Crosslabeling wickeln wir mit unserem Know How schnell und zielgerichtet ab.",
+	"pr4": "Die Übernahme des kompletten Schriftverkehrs und die Abwicklung mit allen Beteiligten erledigen wir für Ihr Unternehmen, selbstverständlich immer in Absprache mit Ihnen und den Versicherern.",
+	"pr5": "Haben wir Ihr Interesse geweckt? Dann rufen Sie uns an.",
     "capacityExploitation": {
       "title": "Sie suchen eine optimale Auslastung für Ihre Fahrzeuge?",
       "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
