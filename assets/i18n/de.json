@@ -1,7 +1,7 @@
 {
   "header": {
-    "home": "Herzlich willkommen bei GSS Güter-Schaden-Service,",
-    "home-subtitle": "dem Versicherungsmakleran an deiner Seite",
+    "home": "Herzlich Willkommen bei der GSS Güter-Schaden-Service GmbH,",
+    "home-subtitle": "dem Versicherungsmakler an Ihrer Seite",
     "company": "unternehmen",
     "locations": "standorte",
 	"career": "karriere",
@@ -12,8 +12,11 @@
     "dataPrivacy": "datenschutz"
   },
   "home": {
-    "reasons": "Fünf gute Gründe für GSS Güter-Schaden-Service"
-  },
+    "pr1": "Die Güter-Schaden-Service GmbH ist ein Tochterunternehmen der <a href='https://neufrait.github.io/neufra.eu'>NEUFRA Speditions GmbH</a>." ,
+    "pr2": "Wir sind <strong>die Experten</strong> für Risikoabsicherungen in der Transport- und Logistikbranche und haben uns in unserem Portfolio seit über 40 Jahren kontinuierlich weiterentwickelt." ,
+    "pr3": "Zu den anfänglichen Zielen gehörte die Unterstützung unserer Partner vorwiegend in den Bereichen der Bearbeitung und Analyse von Schadenfällen. Inzwischen sind wir in allen Bereichen der Absicherung von Transport und Logistikunternehmen versiert und behalten immer auch IHRE Kunden im Focus.",
+    "pr4": "So schaffen wir Transparenz und Zufriedenheit für unsere Kunden - gerne auch für <strong>SIE</strong>."
+},
   "company": {
     "expericence": {
       "title": "Zuverlässiger Partner mit über 40 Jahre Erfahrung",
@@ -116,12 +119,30 @@
 		"pr2": "Als Experten für Risikoabsicherungen in der Transport- und Logistikbranche wissen wir, dass nur maßgeschneiderte Versicherungslösungen den bestmöglichen Schutz bieten. Aus diesem Grund analysieren wir die verschiedenen Komponenten Ihrer individuellen logistischen Lösungen und den daraus resultierenden Risiken. Dabei berücksichtigen wir selbstverständlich auch immer die Anforderungen und Wünsche Ihrer Kunden in diesen Bereichen." ,
 		"pr3": "Wir sorgen für Absicherung in allen Details durch individuelles Wording in den Versicherungspolicen.",
 		"pr4": "Unsere Kernkompetenzen liegen in diesen Bereichen:",
-		"li1": "Verkehrshaftung",
-		"li2": "Warentransportversicherung",
-		"li3": "Gebäudeversicherung",
-		"li4": "Wareninhaltsversicherung",
-		"li5": "Betriebshaftpflicht",
-		"li6": "KFZ-Flottenversicherung"
+		"li1": {
+			"title": "Verkehrshaftung",
+			"text": "<p>Die Verkehrshaftungspolice muss mit den richtigen Komponenten für Ihr Unternehmen ausgestattet sein und auch alle Bereiche abdecken, in denen Sie tätig sind. Ob es sich um eine Frachtführer- oder eine Speditionshaftpflichtpolice handelt, wir haben die richtigen Lösungen für Sie.</p>"
+		},
+		"li2": {
+			"title": "Warentransportversicherung",
+			"text": "<p>Ihr Kunde benötigt eine Warentransportversicherung, da er sehr hochpreise Ware versendet. Was bedeutet das für sie als Logistikdienstleister und auch für Ihre Auftraggeber?</p><p>Mit diesen Fragestellungen setzten wir uns gemeinsam mit Ihnen auseinander und bieten individuelle Lösungen.</par>"
+		},
+		"li3": {
+			"title": "Gebäudeversicherung",
+			"text": "<p>Sie besitzen eine oder mehrere eigene Logistikanlagen und möchten sicher gehen, dass alle Bereiche ausreichend und vollumfänglich abgesichert sind? Sie haben in eine Photovoltaikanlage investiert und haben hierzu Versicherungsfragen? Auch hier erarbeiten wir in Zusammenarbeit mit Ihnen individuelle Lösungen.</p>"
+		},
+		"li4": {
+			"title": "Wareninhaltsversicherung",
+			"text": "<p>Das Ziel eines jeden Unternehmens ist es, die Logistikimmobilien komplett auszulasten. Hierbei entstehen Risiken, die oft nicht oder erst zu spät erkannt werden.</p><p> Darum stellen wir diverse Überlegungen mit Ihnen gemeinsam an.</p><p> Ist die eingelagerte Ware in Ihren Logistik-Hallen ausreichend versichert? Welche Risiken deckt die Feuerversicherung, welche die Verkehrshaftung und welche die Transportversicherung ab? Benötigen Sie eine zusätzlichen Wareninhaltsversicherung um das Risiko für Ihr Unternehmen im Falle eines Elementarereignisses bestmöglich abzusichern</p><p> Sie benötigen eine Versicherung für ein Zollager oder für einen speziellen Kunden mit sehr hochpreisigen Gütern</p><p> Wir bieten Ihnen für alle Bereiche Lösungen an.</p>"
+		},
+		"li5": {
+			"title": "Betriebshaftpflicht",
+			"text": "<p>Bei Tätigkeiten in Ihrem Unternehmen oder durch Ihre Fahrzeuge können trotz aller Sorgfalt verschiedene Schäden verursacht werden.</p><p>Diese können Schadenersatzforderungen nach sich ziehen und Ihr Unternehmen finanziell schwer belasten. Die Höhe der Schadensersatzforderungen kann schnell existenzgefährdend sein. </p><p>Auch hier erarbeiten wir mit Ihnen zusammen alle Bereiche, die Ihre Betriebshaftpflichtversicherung abdecken muss, um Ihr Unternehmen vor solchen finanziellen Belastungen abzusichern.</p>"
+		},
+		"li6": {
+			"title": "KFZ-Flottenversicherung",
+			"text": "<p>Eine KFZ-Flottenversicherung sichert Ihren Fuhrpark und Ihre Fahrer ab, selbstverständlich sowohl für den Bereich der LKW- als auch der PKW-Flotte.</p><p>Statt für jedes Firmenfahrzeug ein individuelles Angebot einholen zu müssen, schließen Sie einen Flottenvertrag ab, der exakt an Ihre individuellen Bedürfnisse angepasst wird. Diese Lösung spart Zeit und bürokratischen Aufwand ein. </p><p>Mit der Flottenversicherung haben sie den passenden Versicherungsschutz für Ihre Autoflotte, um für alle Fälle abgesichert zu sein - egal ob der Schaden durch Diebstahl, Unfall oder eine Panne entstanden ist.</p>"
+		}
     },
     "position": "Position",
     "location": "Standort",
