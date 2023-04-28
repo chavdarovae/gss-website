@@ -21,6 +21,10 @@ export class SharedService {
 		return window.innerWidth < 500;
 	}
 
+	isPortraitTabletDevice(): boolean {
+		return window.innerWidth < 900;
+	}
+
 	setNewLanugage(lang: string) {
 		this.currLangSubject.next(lang);
 	}

@@ -1,16 +1,60 @@
-<div class="container carrier">
-    <section class="carrier__info">
+<div class="container insurance">
+    <section class="insurance__info">
         <p>{{'insurance.info.pr1' | translate }}</p>
         <p>{{'insurance.info.pr2' | translate }}</p>
 		<p>{{'insurance.info.pr3' | translate }}</p>
 		<p>{{'insurance.info.pr4' | translate }}</p>
-		<ul>
-			<li><a>{{'insurance.info.li1' | translate }}</a></li>
-			<li><a>{{'insurance.info.li2' | translate }}</a></li>
-			<li><a>{{'insurance.info.li3' | translate }}</a></li>
-			<li><a>{{'insurance.info.li4' | translate }}</a></li>
-			<li><a>{{'insurance.info.li5' | translate }}</a></li>
-			<li><a>{{'insurance.info.li6' | translate }}</a></li>
-		</ul>
     </section>
+
+	<section class="insurance__competences">
+		<ul>
+			<li (click)="toggleCurrCompetence('li1')">
+				<a [ngClass]="{'active': currCompetence === 'li1'}">
+					{{'insurance.info.li1.title' | translate }}
+					<i class="fa fa-angle-down toggle" [ngClass]="{'expand': currCompetence === 'li1'}"></i>
+				</a>
+				<div *ngIf="currCompetence === 'li1'" class="show-on-tablet-portrait" [innerHTML]="('insurance.info.li1.text') | translate"></div>
+			</li>
+			<li (click)="toggleCurrCompetence('li2')">
+				<a [ngClass]="{'active': currCompetence === 'li2'}">
+					{{'insurance.info.li2.title' | translate }}
+					<i class="fa fa-angle-down toggle" [ngClass]="{'expand': currCompetence === 'li2'}"></i>
+				</a>
+				<div  *ngIf="currCompetence === 'li2'" class="show-on-tablet-portrait" [innerHTML]="('insurance.info.li2.text') | translate"></div>
+			</li>
+			<li (click)="toggleCurrCompetence('li3')">
+				<a [ngClass]="{'active': currCompetence === 'li3'}">
+					{{'insurance.info.li3.title' | translate }}
+					<i class="fa fa-angle-down toggle" [ngClass]="{'expand': currCompetence === 'li3'}"></i>
+				</a>
+				<div  *ngIf="currCompetence === 'li3'" class="show-on-tablet-portrait" [innerHTML]="('insurance.info.li3.text') | translate"></div>
+			</li>
+			<li (click)="toggleCurrCompetence('li4')">
+				<a [ngClass]="{'active': currCompetence === 'li4'}">
+					{{'insurance.info.li4.title' | translate }}
+					<i class="fa fa-angle-down toggle" [ngClass]="{'expand': currCompetence === 'li4'}"></i>
+				</a>
+				<div  *ngIf="currCompetence === 'li4'" class="show-on-tablet-portrait" [innerHTML]="('insurance.info.li4.text') | translate"></div>
+			</li>
+			<li (click)="toggleCurrCompetence('li5')">
+				<a [ngClass]="{'active': currCompetence === 'li5'}">
+					{{'insurance.info.li5.title' | translate }}
+					<i class="fa fa-angle-down toggle" [ngClass]="{'expand': currCompetence === 'li5'}"></i>
+				</a>
+				<div  *ngIf="currCompetence === 'li5'" class="show-on-tablet-portrait" [innerHTML]="('insurance.info.li5.text') | translate"></div>
+			</li>
+			<li (click)="toggleCurrCompetence('li6')">
+				<a [ngClass]="{'active': currCompetence === 'li6'}">
+					{{'insurance.info.li6.title' | translate }}
+					<i class="fa fa-angle-down toggle" [ngClass]="{'expand': currCompetence === 'li6'}"></i>
+				</a>
+				<div  *ngIf="currCompetence === 'li6'" class="show-on-tablet-portrait" [innerHTML]="('insurance.info.li6.text') | translate"></div>
+			</li>
+		</ul>
+
+		<div class="hide-on-tablet-portrait competence">
+			<h4 class="competence__title">{{ ('insurance.info.'+ currCompetence +'.title') | translate}}</h4>
+			<div class="competence__text" [innerHTML]="('insurance.info.'+ currCompetence +'.text') | translate"></div>
+		</div>
+	</section>
 </div>
