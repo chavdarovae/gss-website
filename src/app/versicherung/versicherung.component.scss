@@ -16,17 +16,22 @@
 			min-height: 400px;
 			display: grid;
 			grid-template-columns: 1fr 2.5fr;
-			column-gap: 50px;
+			column-gap: 30px;
 			align-items: center;
 		}
 
 		@include for-desktop-up {
 			min-height: 350px;
 			grid-template-columns: 1fr 3fr;
-			column-gap: 100px;
+			column-gap: 90px;
 		}
 
-		ul li {
+		ul {
+			list-style-type: disc !important;
+			list-style-position: outside !important;
+		}
+
+		li {
 			border-top: 3px solid $primary;
 			display: flex;
 			flex-flow: column nowrap;
@@ -42,6 +47,7 @@
 
 			@include for-tablet-landscape-up {
 				border: none;
+				display: list-item;
 			}
 
 			a {
@@ -49,7 +55,12 @@
 				display: flex;
 				flex-flow: row nowrap;
 				justify-content: space-between;
-				padding: 20px 0;
+				padding: 20px 10px;
+
+				@include for-tablet-landscape-up {
+					display: inline-block;
+					padding: 20px 0;
+				}
 			}
 
 			a.active {
@@ -67,7 +78,7 @@
 
 
 .toggle {
-	width: 30px;
+	width: fit-content;
 	transition: transform 600ms linear;
 	transform-origin: center center;
 	transform-style: preserve-3D;
