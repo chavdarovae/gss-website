@@ -15,7 +15,7 @@
                 <span class="vert-to-45left">|</span>
             </li>
             <!-- languageBar for mobile version -->
-            <li class="menu__item menu__item--lang show-on-tablet">
+            <li *ngIf="false" class="menu__item menu__item--lang show-on-tablet">
                 <ng-container *ngTemplateOutlet="languageBar"></ng-container>
             </li>
             <!-- unternehmen -->
@@ -53,7 +53,7 @@
                 <a routerLink="/impressum" class="menu__item-link" translate="footer.legalNotice"></a>
                 <a routerLink="/datenschutz" class="menu__item-link" translate="footer.dataPrivacy"></a>
             </li>
-            <li class="menu__item  hide-on-tablet">
+            <li *ngIf="false" class="menu__item  hide-on-tablet">
                 <ng-container *ngTemplateOutlet="languageBar"></ng-container>
             </li>
         </ul>
@@ -81,7 +81,7 @@
 </div>
 
 <ng-template #languageBar>
-    <select #langBar *ngIf="(sharedService.currLang$ | async) as lang" [value]="lang" class="lang-bar"
+    <select  #langBar *ngIf="(sharedService.currLang$ | async) as lang" [value]="lang" class="lang-bar"
         (change)="translateLanguageTo(langBar.value)">
         <option value="de">DE</option>
         <option value="en">EN</option>
