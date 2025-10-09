@@ -54,8 +54,8 @@
   "career": {
     "info": {
 		"pr1": "Werden Sie Teil unseres Teams!",
-		"pr2": "Nur als Team können wir erfolgreich sein. Daher suchen wir immer neue Kollegen/-innen die mit Ehrgeiz und Leidenschaft ihre individuellen Fähigkeiten einbringen.",
-		"pr3": "Wir freuen uns auf Bewerbungen junger Talente. Hier geht es zu unserem Ausbildungsangebot:",
+		"pr2": "Nur als Team können wir erfolgreich sein. Daher suchen wir immer neue Kollegen/-innen die mit Ehrgeiz und Leidenschaft ihre individuellen Fähigkeiten einbringen. Durch unser herausforderndes und interessantes Umfeld haben Sie die Möglichkeit frühzeitig Verantwortung zu übernehmen. Hier zu unserem Stellenangebot:",
+		"pr3": "Oder suchst Du eine Ausbildungsstelle? Wir freuen uns auf Bewerbungen junger Talente. Hier geht es zu unserem Ausbildungsangebot:",
 		"pr4": "Stellenangebot",
 		"pr5": "Ausbildungsangebot"
     },
@@ -100,6 +100,7 @@
   "kfzBereich": {
 	"pr1": "Selbstverständlich haben wir auch die klassische KFZ-Versicherung in unserem Portfolio. Ein flexibler und umfassender KFZ-Versicherungsschutz ist daher sowohl im Bereich der Einzelpolicen als auch in der Sparte Flottenpolicen im Focus.",
 	"pr2": "Damit ein Schadensereignis im KFZ-Bereich nicht zu einer Belastung für Sie wird, übernehmen den Schriftverkehr mit Gutachtern, Werkstätten, Versicherern, Geschädigten und Verursachern. Sie melden uns lediglich den Vorfall und alle vorliegenden Unterlagen, dann sind wir für Sie im Einsatz.",
+	"pr3": "Einzelpolicen können Sie gerne vorab über diesen Link zu unserem Partner selbst errechnen.",
     "national": {
       "title": "Flottenpolice",
       "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
@@ -133,7 +134,7 @@
 		},
 		"li4": {
 			"title": "Wareninhaltsversicherung",
-			"text": "<p>Das Ziel eines jeden Unternehmens ist es, die Logistikimmobilien komplett auszulasten. Hierbei entstehen Risiken, die oft nicht oder erst zu spät erkannt werden.</p><p> Darum stellen wir diverse Überlegungen mit Ihnen gemeinsam an.</p><p> Ist die eingelagerte Ware in Ihren Logistik-Hallen ausreichend versichert? Welche Risiken deckt die Feuerversicherung, welche die Verkehrshaftung und welche die Transportversicherung ab? Benötigen Sie eine zusätzlichen Wareninhaltsversicherung um das Risiko für Ihr Unternehmen im Falle eines Elementarereignisses bestmöglich abzusichern.</p><p> Sie benötigen eine Versicherung für ein Zollager oder für einen speziellen Kunden mit sehr hochpreisigen Gütern.</p><p> Wir bieten Ihnen für alle Bereiche Lösungen an.</p>"
+			"text": "<p>Das Ziel eines jeden Unternehmens ist es, die Logistikimmobilien komplett auszulasten. Hierbei entstehen Risiken, die oft nicht oder erst zu spät erkannt werden.</p><p> Darum stellen wir diverse Überlegungen mit Ihnen gemeinsam an.</p><p> Ist die eingelagerte Ware in Ihren Logistik-Hallen ausreichend versichert? Welche Risiken deckt die Feuerversicherung, welche die Verkehrshaftung und welche die Transportversicherung ab? Benötigen Sie eine zusätzlichen Wareninhaltsversicherung um das Risiko für Ihr Unternehmen im Falle eines Elementarereignisses bestmöglich abzusichern</p><p> Sie benötigen eine Versicherung für ein Zollager oder für einen speziellen Kunden mit sehr hochpreisigen Gütern</p><p> Wir bieten Ihnen für alle Bereiche Lösungen an.</p>"
 		},
 		"li5": {
 			"title": "Betriebshaftpflicht",
