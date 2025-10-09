@@ -15,9 +15,9 @@
                 <span class="vert-to-45left">|</span>
             </li>
             <!-- languageBar for mobile version -->
-            <li class="menu__item menu__item--lang show-on-tablet">
+            <!-- <li class="menu__item menu__item--lang show-on-tablet">
                 <ng-container *ngTemplateOutlet="languageBar"></ng-container>
-            </li>
+            </li> -->
             <!-- unternehmen -->
             <li class="menu__item" (click)="menuToggle.click()">
                 <a routerLink="/unternehmen" class="menu__item-link"
@@ -53,9 +53,10 @@
                 <a routerLink="/impressum" class="menu__item-link" translate="footer.legalNotice"></a>
                 <a routerLink="/datenschutz" class="menu__item-link" translate="footer.dataPrivacy"></a>
             </li>
-            <li class="menu__item  hide-on-tablet">
+			<!-- languageBar for desktop version -->
+            <!-- <li class="menu__item  hide-on-tablet">
                 <ng-container *ngTemplateOutlet="languageBar"></ng-container>
-            </li>
+            </li> -->
         </ul>
         <div class="backdrop" (click)="menuToggle.click()"></div>
     </div>

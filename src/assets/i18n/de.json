@@ -18,30 +18,10 @@
     "pr4": "So schaffen wir Transparenz und Zufriedenheit für unsere Kunden - gerne auch für <strong>SIE</strong>."
 },
   "company": {
-    "expericence": {
-      "title": "Zuverlässiger Partner mit über 40 Jahre Erfahrung",
-      "info": "Seit 1982 bieten wir der Speditions und Logistikbranche unsere Unterstützung in allen Bereichen und Versicherungsfragen an. Hierbei haben wir unseren Schwerpunkt auf die Schadenbearbeitung gesetzt."
-    },
-    "partner": {
-      "title": "Individuelle Versicherungslösungen",
-      "info": "Durch eine genaue Analyse Ihrer Bedürfnisse und Vergleich auf dem Versicherungsmarkt, sind wir in der Lage einen optimalen Versicherungsschutz zu bestimmen. Hierbei wird immer eine kostenschonende Versicherungslösung angestrebt."
-    },
-    "sustainable": {
-      "title": "Partnerschaftliche Zusammenarbeit",
-      "info": "Wir bearbeiten nicht nur die Schäden nach den Versicherungsvorschriften, sondern übernehmen auch die Korrespondenz mit allen Beteiligten. Wir führen den gesamten Schriftverkehr mit Anspruchstellern, Versicherern und Verursachern. Auch die Einleitung von Regressen gehört hier zu unseren Aufgaben. Natürlich werden unsere Kunden über alle anfallenden Schritte informiert."
-    },
-    "specialty1": {
-      "title": "Spezialist für Transportschäden",
-      "info": "Unser Team wird durch gelernte Speditionskaufleute unterstützt und kann so bereits auf eine langjährige Berufserfahrung im Bereich der Transportschadenbearbeitung zurückgreifen. Der Erfahrungsschatz hat sich im Laufe der Zeit auf dem Gebiet der Transportschäden immer weiter angereichert. Hierdurch ist die Abwicklungen der Transportschäden für alle Verkehrsträgern zu unserem „täglichen Brot“ geworden."
-    },
-    "specialty2": {
-      "title": "Spezialist für den KFZ Bereich",
-      "info": "Alle wissenswerten Details rund um die KFZ-Versicherung erklären wir Ihnen gerne. Sollte es Optimierungsbedarf bei Ihrer Police geben, decken wir diesen im Rahmen stetiger Überprüfungen auf. Die Abwicklung von KFZ-Schäden ergänzt unser Portfolio; der Schriftverkehr mit allen Beteiligten gehört für uns selbstverständlich neben der Flottenbetreuung dazu."
-    },
-    "history": {
-      "title": "Historie",
-      "first": "Am 01.01.1982 wurde die GSS Güter Schaden Service GmbH in Frankfurt gegründet. Zu den anfänglichen Zielen gehörte die Unterstützung unserer Partner vorwiegend in den Bereichen der Bearbeitung und Analyse von Schadenfällen sowie der Besorgung und Optimierung des Deckungsschutzes. Im Jahr 2008 wurde unsere Niederlassung in Neuss gegründet, um einen flächendeckenden Service zu gewährleisten. Im Laufe dieser Jahre hat sich die GSS Güter Schaden Service GmbH auf dem Versicherungsmarkt etabliert und entwickelt. Für die Speditions- und Logistikbranche kann die GSS Güter Schaden Service GmbH inzwischen ein umfassendes Fachwissen auf dem Gebiet des Transportrechtes zur Verfügung stellen."
-    }
+	"pr1": "Die GSS Güter-Schaden-Service GmbH wurde 1982 mit dem Ziel gegründet der Speditions- und Logistikbranche als zuverlässiger Partner rund um die Themen Versicherungsschutz und Schadensbearbeitung zur Verfügung zu stehen.",
+	"pr2": "Da unser Team unter anderem aus Speditionskaufleuten besteht, sind wir mit allen speditionellen Abläufen der verschiedenen Verkehrsträger vertraut. Inzwischen verfügen wir über 40 Jahre Erfahrung in der Schadensanalyse und -bearbeitung, so dass Ereignisse, die Ihre täglichen Routinen stören, bei uns bestens aufgehoben sind. ",
+	"pr3": "Mit der Erteilung des Maklermandat bieten wir darüber hinaus unabhängige, auf den Einzelfall konzipierte Versicherungsangebote für alle Logistikbereiche an.",
+	"pr4": "Kurzum - mit uns als Partner können Sie sich auf Ihre Kernkompetenzen konzentrieren!"
   },
   "locations": {
     "info": "Über unser dichtes Niederlassungsnetz stellen wir größtmögliche geografische Nähe zu unseren Geschäftspartnern sicher. Klicken Sie für Detailinformationen zu Relationen und Ansprechpartnern einfach auf eine NEUFRA-Niederlassung in der Karte.",
@@ -54,7 +34,7 @@
   "career": {
     "info": {
 		"pr1": "Werden Sie Teil unseres Teams!",
-		"pr2": "Nur als Team können wir erfolgreich sein. Daher suchen wir immer neue Kollegen/-innen die mit Ehrgeiz und Leidenschaft ihre individuellen Fähigkeiten einbringen. Durch unser herausforderndes und interessantes Umfeld haben Sie die Möglichkeit frühzeitig Verantwortung zu übernehmen. Hier zu unserem Stellenangebot:",
+		"pr2": "Nur als Team können wir erfolgreich sein. Daher suchen wir immer neue Kollegen/-innen die mit Ehrgeiz und Leidenschaft ihre individuellen Fähigkeiten einbringen.",
 		"pr3": "Oder suchst Du eine Ausbildungsstelle? Wir freuen uns auf Bewerbungen junger Talente. Hier geht es zu unserem Ausbildungsangebot:",
 		"pr4": "Stellenangebot",
 		"pr5": "Ausbildungsangebot"
@@ -99,20 +79,7 @@
   },
   "kfzBereich": {
 	"pr1": "Selbstverständlich haben wir auch die klassische KFZ-Versicherung in unserem Portfolio. Ein flexibler und umfassender KFZ-Versicherungsschutz ist daher sowohl im Bereich der Einzelpolicen als auch in der Sparte Flottenpolicen im Focus.",
-	"pr2": "Damit ein Schadensereignis im KFZ-Bereich nicht zu einer Belastung für Sie wird, übernehmen den Schriftverkehr mit Gutachtern, Werkstätten, Versicherern, Geschädigten und Verursachern. Sie melden uns lediglich den Vorfall und alle vorliegenden Unterlagen, dann sind wir für Sie im Einsatz.",
-	"pr3": "Einzelpolicen können Sie gerne vorab über diesen Link zu unserem Partner selbst errechnen.",
-    "national": {
-      "title": "Flottenpolice",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
-    },
-    "european": {
-      "title": "PKW",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
-    },
-    "international": {
-      "title": "Partner",
-      "info": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus dolores accusantium dolorem consectetur, inventore distinctio voluptatem animi ad, aspernatur obcaecati nisi similique, id unde saepe odit fugit assumenda enim beatae?"
-    }
+	"pr2": "Damit ein Schadensereignis im KFZ-Bereich nicht zu einer Belastung für Sie wird, übernehmen den Schriftverkehr mit Gutachtern, Werkstätten, Versicherern, Geschädigten und Verursachern. Sie melden uns lediglich den Vorfall und alle vorliegenden Unterlagen, dann sind wir für Sie im Einsatz."
   },
   "insurance": {
     "info": {
@@ -134,7 +101,7 @@
 		},
 		"li4": {
 			"title": "Wareninhaltsversicherung",
-			"text": "<p>Das Ziel eines jeden Unternehmens ist es, die Logistikimmobilien komplett auszulasten. Hierbei entstehen Risiken, die oft nicht oder erst zu spät erkannt werden.</p><p> Darum stellen wir diverse Überlegungen mit Ihnen gemeinsam an.</p><p> Ist die eingelagerte Ware in Ihren Logistik-Hallen ausreichend versichert? Welche Risiken deckt die Feuerversicherung, welche die Verkehrshaftung und welche die Transportversicherung ab? Benötigen Sie eine zusätzlichen Wareninhaltsversicherung um das Risiko für Ihr Unternehmen im Falle eines Elementarereignisses bestmöglich abzusichern</p><p> Sie benötigen eine Versicherung für ein Zollager oder für einen speziellen Kunden mit sehr hochpreisigen Gütern</p><p> Wir bieten Ihnen für alle Bereiche Lösungen an.</p>"
+			"text": "<p>Das Ziel eines jeden Unternehmens ist es, die Logistikimmobilien komplett auszulasten. Hierbei entstehen Risiken, die oft nicht oder erst zu spät erkannt werden.</p><p> Darum stellen wir diverse Überlegungen mit Ihnen gemeinsam an.</p><p> Ist die eingelagerte Ware in Ihren Logistik-Hallen ausreichend versichert? Welche Risiken deckt die Feuerversicherung, welche die Verkehrshaftung und welche die Transportversicherung ab? Benötigen Sie eine zusätzlichen Wareninhaltsversicherung um das Risiko für Ihr Unternehmen im Falle eines Elementarereignisses bestmöglich abzusichern.</p><p> Sie benötigen eine Versicherung für ein Zollager oder für einen speziellen Kunden mit sehr hochpreisigen Gütern.</p><p> Wir bieten Ihnen für alle Bereiche Lösungen an.</p>"
 		},
 		"li5": {
 			"title": "Betriebshaftpflicht",

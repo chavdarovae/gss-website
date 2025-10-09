@@ -24,6 +24,10 @@
         }
     }
 
+	&__adr:hover {
+        text-decoration: none !important;
+    }
+
     &__name {
         font-weight: $font-weight-semi-bold;
     }
